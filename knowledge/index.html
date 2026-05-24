@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Center — Texas Foreclosure Education | Nationwide Equity</title>
+  <meta name="description" content="Free, comprehensive Texas foreclosure guides. Real statutes, plain-English explanations, and honest answers for homeowners and heirs. Educational platform from Nationwide Equity." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-900: #061829; --navy-800: #0A2540; --navy-700: #143656;
+      --gold-500: #C9A24B; --gold-400: #D4B570; --gold-100: #F0E5C8;
+      --cream: #FAF7F2; --cream-dark: #F2EDE3; --white: #FFFFFF;
+      --text-900: #0A1929; --text-700: #2D3A4B; --text-500: #5C6B7E;
+      --border: #E5DDD0;
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); color: var(--text-900); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--navy-700); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(250, 247, 242, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+    .logo { font-family: var(--serif); font-weight: 600; font-size: 22px; color: var(--navy-800); letter-spacing: -0.01em; }
+    .logo span { color: var(--gold-500); }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-700); }
+    .nav-links a:hover { color: var(--navy-800); }
+    .btn-phone { background: var(--navy-800); color: var(--white); padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: 14px; }
+    @media (max-width: 700px) { .nav-links a:not(.btn-phone) { display: none; } }
+
+    .hero { padding: 80px 0 60px; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%); position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, var(--gold-100) 0%, transparent 70%); opacity: 0.6; z-index: 0; }
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+    .eyebrow { font-size: 13px; font-weight: 600; color: var(--gold-500); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+    h1 { font-family: var(--serif); font-size: clamp(40px, 5.5vw, 60px); font-weight: 500; line-height: 1.05; letter-spacing: -0.02em; color: var(--navy-900); margin-bottom: 20px; }
+    h1 em { font-style: italic; color: var(--gold-500); font-weight: 400; }
+    .hero p { font-size: 19px; color: var(--text-700); line-height: 1.55; }
+
+    .featured { padding: 80px 0 40px; }
+    .featured-card { background: var(--navy-900); color: var(--white); border-radius: 24px; padding: 60px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; align-items: center; position: relative; overflow: hidden; }
+    .featured-card::before { content: ''; position: absolute; bottom: -200px; right: -200px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(201, 162, 75, 0.2) 0%, transparent 70%); }
+    .featured-tag { display: inline-block; background: var(--gold-500); color: var(--navy-900); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px; }
+    .featured-card h2 { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 40px); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 16px; color: var(--white); }
+    .featured-card p { font-size: 17px; color: rgba(255,255,255,0.8); margin-bottom: 28px; line-height: 1.6; }
+    .featured-card .read-time { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+    .btn-read { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--navy-900); padding: 14px 24px; border-radius: 999px; font-weight: 600; font-size: 14px; transition: all 0.2s; }
+    .btn-read:hover { background: var(--gold-400); transform: translateY(-1px); }
+    .featured-side { position: relative; z-index: 1; }
+    .featured-stat { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 24px; margin-bottom: 14px; }
+    .featured-stat .num { font-family: var(--serif); font-size: 32px; color: var(--gold-400); font-weight: 500; line-height: 1; margin-bottom: 8px; }
+    .featured-stat .label { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.4; }
+
+    .topics { padding: 60px 0 100px; }
+    .topics-header { margin-bottom: 48px; }
+    .topics-eyebrow { font-size: 13px; font-weight: 600; color: var(--gold-500); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
+    .topics-title { font-family: var(--serif); font-size: clamp(32px, 4vw, 44px); font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; color: var(--navy-900); margin-bottom: 12px; }
+    .topics-title em { font-style: italic; color: var(--gold-500); }
+    .topics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 800px) { .topics-grid { grid-template-columns: 1fr; } }
+    .article-card { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 36px; transition: all 0.3s; display: block; }
+    .article-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -16px rgba(10, 37, 64, 0.12); border-color: var(--gold-500); }
+    .article-category { display: inline-block; font-size: 11px; font-weight: 700; color: var(--gold-500); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+    .article-card h3 { font-family: var(--serif); font-size: 26px; font-weight: 600; color: var(--navy-900); margin-bottom: 12px; line-height: 1.2; letter-spacing: -0.01em; }
+    .article-card .desc { font-size: 15px; color: var(--text-500); margin-bottom: 20px; line-height: 1.6; }
+    .article-card .meta { display: flex; gap: 16px; font-size: 12px; color: var(--text-500); font-weight: 500; padding-top: 16px; border-top: 1px solid var(--border); }
+    .article-card .meta span { display: flex; align-items: center; gap: 6px; }
+
+    .categories-strip { background: var(--navy-800); color: var(--white); padding: 50px 0; }
+    .categories-strip .container { max-width: 1100px; }
+    .categories-row { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .category-pill { background: rgba(255,255,255,0.08); color: var(--white); padding: 10px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; transition: all 0.2s; }
+    .category-pill:hover { background: var(--gold-500); color: var(--navy-900); }
+
+    .cta-section { background: var(--cream-dark); padding: 100px 0; text-align: center; }
+    .cta-section .container { max-width: 700px; }
+    .cta-section h2 { font-family: var(--serif); font-size: clamp(32px, 4vw, 46px); font-weight: 500; line-height: 1.1; color: var(--navy-900); margin-bottom: 16px; letter-spacing: -0.02em; }
+    .cta-section h2 em { color: var(--gold-500); font-style: italic; }
+    .cta-section p { font-size: 18px; color: var(--text-700); margin-bottom: 32px; }
+    .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--navy-800); color: var(--white); padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 15px; }
+    .btn-secondary { border: 1.5px solid var(--navy-800); color: var(--navy-800); padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 15px; }
+
+    footer { background: var(--navy-900); color: rgba(255, 255, 255, 0.7); padding: 50px 0 30px; font-size: 14px; }
+    footer .container { max-width: 1200px; }
+    .footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 30px; }
+    .footer-brand { font-family: var(--serif); font-size: 20px; color: var(--white); }
+    .footer-brand span { color: var(--gold-500); }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255, 255, 255, 0.7); font-size: 14px; }
+    .footer-links a:hover { color: var(--gold-400); }
+    .footer-bottom { font-size: 12px; color: rgba(255, 255, 255, 0.5); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">Nationwide<span>.</span> Equity</a>
+      <div class="nav-links">
+        <a href="/#services">Services</a>
+        <a href="/knowledge">Knowledge</a>
+        <a href="/#contact">Contact</a>
+        <a href="tel:+18322573367" class="btn-phone">📞 Call Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Knowledge Center</div>
+        <h1>Texas foreclosure, <em>explained honestly.</em></h1>
+        <p>Real Texas statutes. Plain-English explanations. Practical guidance for homeowners, heirs, and anyone navigating a property crisis. No fluff, no scare tactics — just the facts you need to protect what's yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <div class="featured-card">
+        <div>
+          <span class="featured-tag">⭐ Start Here</span>
+          <div class="read-time">⏱ 12 min read · Updated May 2026</div>
+          <h2>The Texas Foreclosure Timeline: Your Complete Guide</h2>
+          <p>From the first missed payment to the courthouse auction — every step the lender takes, every right you have under Texas Property Code §51.002, and exactly how much time you have to act at each stage.</p>
+          <a href="/knowledge/texas-foreclosure-timeline" class="btn-read">Read the guide →</a>
+        </div>
+        <div class="featured-side">
+          <div class="featured-stat">
+            <div class="num">21 days</div>
+            <div class="label">Minimum notice required before a Texas foreclosure sale (Tex. Prop. Code §51.002(b))</div>
+          </div>
+          <div class="featured-stat">
+            <div class="num">20 days</div>
+            <div class="label">Right-to-reinstate period after Notice of Default in most Texas deeds of trust</div>
+          </div>
+          <div class="featured-stat">
+            <div class="num">1st Tue</div>
+            <div class="label">Of every month — when Texas non-judicial foreclosure sales occur at the courthouse</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="topics">
+    <div class="container">
+      <div class="topics-header">
+        <div class="topics-eyebrow">All articles</div>
+        <h2 class="topics-title">Every guide we've written, <em>organized by topic.</em></h2>
+      </div>
+
+      <div class="topics-grid">
+
+        <a href="/knowledge/how-to-stop-foreclosure-texas" class="article-card">
+          <div class="article-category">DIY Solutions</div>
+          <h3>7 Ways to Stop Foreclosure in Texas (And When Each Works)</h3>
+          <p class="desc">Reinstatement, modification, forbearance, short sale, bankruptcy, deed-in-lieu, and emergency sale — what each one does, who qualifies, and the timing window for each option under Texas law.</p>
+          <div class="meta">
+            <span>📖 14 min read</span>
+            <span>⚖ Tex. Prop. Code §51.002(d)</span>
+          </div>
+        </a>
+
+        <a href="/knowledge/affidavit-of-heirship-texas" class="article-card">
+          <div class="article-category">Inheritance &amp; Heirship</div>
+          <h3>Affidavit of Heirship in Texas: The Complete Guide</h3>
+          <p class="desc">When you don't need probate, how to qualify under Tex. Estates Code §203.001, what witnesses you need, what it costs, and how it lets you sell or refinance inherited Texas property.</p>
+          <div class="meta">
+            <span>📖 11 min read</span>
+            <span>⚖ Tex. Estates Code §203.001</span>
+          </div>
+        </a>
+
+        <a href="/knowledge/foreclosure-myths-texas" class="article-card">
+          <div class="article-category">Misconceptions</div>
+          <h3>5 Foreclosure Myths That Cost Texas Homeowners Their Homes</h3>
+          <p class="desc">"They can't really take my house." "Bankruptcy ruins your credit forever." "I have to keep paying or lose everything." The dangerous misconceptions that paralyze Texans into losing properties they could have saved.</p>
+          <div class="meta">
+            <span>📖 9 min read</span>
+            <span>🏠 Real homeowner stories</span>
+          </div>
+        </a>
+
+        <a href="/knowledge/subject-to-real-estate-explained" class="article-card">
+          <div class="article-category">Creative Real Estate</div>
+          <h3>Subject To Real Estate: Is It Safe? Honest Pros and Cons</h3>
+          <p class="desc">A real, legal, century-old way to transfer property with little or no equity. We explain how it works, the actual risks (yes, your mortgage stays in your name), and the safeguards that protect sellers.</p>
+          <div class="meta">
+            <span>📖 13 min read</span>
+            <span>⚠ Risks honestly disclosed</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-strip">
+    <div class="container">
+      <div class="categories-row">
+        <a href="/knowledge/texas-foreclosure-timeline" class="category-pill">Foreclosure Timeline</a>
+        <a href="/knowledge/how-to-stop-foreclosure-texas" class="category-pill">Stop Foreclosure</a>
+        <a href="/knowledge/affidavit-of-heirship-texas" class="category-pill">Heirship</a>
+        <a href="/knowledge/foreclosure-myths-texas" class="category-pill">Myths Debunked</a>
+        <a href="/knowledge/subject-to-real-estate-explained" class="category-pill">Subject To</a>
+        <a href="/#services" class="category-pill">Our Services</a>
+        <a href="/#contact" class="category-pill">Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Need help with <em>your specific situation?</em></h2>
+      <p>Knowledge is the first step. The second is talking with someone who has navigated these situations hundreds of times. Free, confidential consultation — no upfront cost, no pressure.</p>
+      <div class="cta-buttons">
+        <a href="/#contact" class="btn-primary">Get free consultation →</a>
+        <a href="tel:+18322573367" class="btn-secondary">📞 832-257-3367</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-brand">Nationwide<span>.</span> Equity</div>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/knowledge">Knowledge</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms &amp; Conditions</a>
+          <a href="/sms-policy">SMS Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Nationwide Equity LLC. All rights reserved. · Nationwide Equity LLC, 2550 Pacific Ave Suite 700, Dallas, TX 75226 · 832-257-3367 · info@nationwideequity.us<br>
+        Nationwide Equity is a real estate solutions company, not a law firm. Information on this site is educational and not legal advice. Always consult a licensed Texas attorney for legal questions about your specific situation.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

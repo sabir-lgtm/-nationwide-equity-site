@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMS / Messaging Policy — Nationwide Equity</title>
+  <meta name="description" content="Nationwide Equity SMS and Messaging Policy. How our text messaging program works." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-900: #061829; --navy-800: #0A2540; --navy-700: #143656; --navy-600: #1F4A75;
+      --gold-500: #C9A24B; --gold-400: #D4B570; --gold-100: #F0E5C8;
+      --cream: #FAF7F2; --cream-dark: #F2EDE3; --white: #FFFFFF;
+      --text-900: #0A1929; --text-700: #2D3A4B; --text-500: #5C6B7E;
+      --border: #E5DDD0;
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); color: var(--text-900); background: var(--cream); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: var(--navy-700); text-decoration: underline; }
+    a:hover { color: var(--gold-500); }
+    .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(250, 247, 242, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+    .logo { font-family: var(--serif); font-weight: 600; font-size: 22px; color: var(--navy-800); letter-spacing: -0.01em; text-decoration: none; }
+    .logo span { color: var(--gold-500); }
+    .back-link { font-size: 14px; font-weight: 500; color: var(--text-700); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+    .back-link:hover { color: var(--navy-800); }
+
+    .hero { padding: 60px 0 40px; }
+    .eyebrow { font-size: 13px; font-weight: 600; color: var(--gold-500); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+    h1 { font-family: var(--serif); font-size: clamp(36px, 5vw, 52px); font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; color: var(--navy-900); margin-bottom: 16px; }
+    .updated { font-size: 14px; color: var(--text-500); margin-bottom: 32px; }
+
+    .content { padding-bottom: 80px; }
+    .content section { margin-bottom: 40px; }
+    .content h2 { font-family: var(--serif); font-size: 26px; font-weight: 600; color: var(--navy-900); margin-bottom: 14px; padding-top: 28px; border-top: 1px solid var(--border); letter-spacing: -0.01em; }
+    .content h2:first-of-type { padding-top: 0; border-top: none; }
+    .content p { margin-bottom: 16px; color: var(--text-700); font-size: 16px; }
+    .content ul { margin: 0 0 16px 24px; color: var(--text-700); font-size: 16px; }
+    .content li { margin-bottom: 8px; padding-left: 4px; }
+    .content strong { color: var(--text-900); font-weight: 600; }
+
+    .lead { font-size: 19px; line-height: 1.6; color: var(--text-700); margin-bottom: 48px; max-width: 700px; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 40px; }
+    .card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+    .card .icon { width: 40px; height: 40px; background: var(--navy-800); color: var(--gold-400); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-weight: 600; font-size: 18px; margin-bottom: 14px; }
+    .card h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--navy-900); margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--text-500); margin: 0; }
+
+    .callout { background: var(--white); border-left: 4px solid var(--gold-500); padding: 24px 28px; margin: 24px 0; border-radius: 6px; }
+    .callout p { margin-bottom: 0; }
+    .callout p strong { color: var(--navy-800); }
+
+    .keyword-box { background: var(--navy-800); color: var(--white); padding: 32px; border-radius: 16px; margin: 32px 0; }
+    .keyword-box h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; color: var(--white); margin-bottom: 16px; }
+    .keyword-box p { color: rgba(255,255,255,0.85); margin-bottom: 12px; font-size: 15px; }
+    .keyword-box .keyword { display: inline-block; background: var(--gold-500); color: var(--navy-900); padding: 4px 12px; border-radius: 6px; font-family: monospace; font-weight: 700; letter-spacing: 0.05em; font-size: 14px; }
+    .keyword-box a { color: var(--gold-400); }
+
+    footer { background: var(--navy-900); color: rgba(255, 255, 255, 0.7); padding: 50px 0 30px; font-size: 14px; }
+    footer .container { max-width: 1200px; }
+    .footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 30px; }
+    .footer-brand { font-family: var(--serif); font-size: 20px; color: var(--white); }
+    .footer-brand span { color: var(--gold-500); }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 14px; }
+    .footer-links a:hover { color: var(--gold-400); }
+    .footer-bottom { font-size: 12px; color: rgba(255, 255, 255, 0.5); line-height: 1.6; }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">Nationwide<span>.</span> Equity</a>
+      <a href="/" class="back-link">← Back to home</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="hero">
+        <div class="eyebrow">SMS / Messaging Policy</div>
+        <h1>How our text messages work.</h1>
+        <p class="updated">Last updated: May 23, 2026</p>
+      </div>
+
+      <p class="lead">Quick, plain-language summary of our SMS program. For full legal terms, see our <a href="/terms">Terms &amp; Conditions</a>. For privacy details, see our <a href="/privacy">Privacy Policy</a>.</p>
+
+      <div class="content">
+
+        <section>
+          <h2>What you'll receive</h2>
+          <p>If you provide your phone number and opt in, Nationwide Equity LLC will send you text messages in two categories — you can opt in to either, both, or neither.</p>
+
+          <div class="grid">
+            <div class="card">
+              <div class="icon">A</div>
+              <h3>Non-marketing messages</h3>
+              <p>Consultation confirmations, case updates, document requests, appointment reminders, and other service-related communications about your case.</p>
+            </div>
+            <div class="card">
+              <div class="icon">B</div>
+              <h3>Marketing messages</h3>
+              <p>Optional. Special offers, discounts, and service updates from Nationwide Equity.</p>
+            </div>
+          </div>
+
+          <p>Both opt-ins are completely optional. You can submit our contact form, call us, or email us without consenting to text messages, and we'll still respond to your inquiry.</p>
+        </section>
+
+        <section>
+          <h2>How often we text</h2>
+          <p>Message frequency varies based on your case and stated preferences. For active foreclosure cases, you may receive several messages per day during the most critical periods (such as the week before a scheduled sale). For most users, frequency is a few messages per week or less.</p>
+          <p>Standard message and data rates may apply per your wireless carrier's plan. If you have questions about your text or data plan, contact your wireless provider.</p>
+        </section>
+
+        <section>
+          <h2>How to opt out and get help</h2>
+
+          <div class="keyword-box">
+            <h3>The two keywords you need to know</h3>
+            <p>Reply <span class="keyword">STOP</span> to any message from us — you'll get a single confirmation reply and then no more messages. You can re-subscribe anytime by submitting our form again.</p>
+            <p>Reply <span class="keyword">HELP</span> to any message and we'll respond with support information. You can also reach us directly at <a href="tel:+13464519887">346-451-9887</a> or <a href="mailto:info@nationwideequity.us">info@nationwideequity.us</a>.</p>
+          </div>
+
+          <p>Opting out of marketing does not opt you out of non-marketing service messages, and vice versa — they are managed separately.</p>
+        </section>
+
+        <section>
+          <h2>Carriers and delivery</h2>
+          <div class="callout">
+            <p><strong>Carriers are not liable for delayed or undelivered messages.</strong></p>
+          </div>
+          <p>We send messages through licensed messaging carriers, but delivery is not guaranteed. If you don't receive an expected message, please contact us directly by phone or email.</p>
+        </section>
+
+        <section>
+          <h2>How we handle your mobile data</h2>
+          <div class="callout">
+            <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Information sharing to subcontractors in support services, such as customer service, is permitted. All other use case categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+          </div>
+          <p>This means: we will <strong>not</strong> sell your phone number, your consent record, or any related mobile data. We will not share it with affiliates for their marketing. We <em>do</em> share it with the operational vendors who help us run our business (such as our CRM provider, GoHighLevel, which handles the actual sending of our texts), and with service-specific providers when relevant to your case (such as licensed Texas attorneys engaged on your behalf).</p>
+          <p>For the full data-handling story, read our <a href="/privacy">Privacy Policy</a>.</p>
+        </section>
+
+        <section>
+          <h2>Questions or concerns</h2>
+          <p>Contact us anytime:</p>
+          <ul>
+            <li><strong>Nationwide Equity LLC</strong></li>
+            <li>2550 Pacific Ave, Suite 700, Dallas, TX 75226</li>
+            <li>Phone: <a href="tel:+18322573367">832-257-3367</a></li>
+            <li>Text/SMS support: <a href="sms:+13464519887">346-451-9887</a></li>
+            <li>Email: <a href="mailto:info@nationwideequity.us">info@nationwideequity.us</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-brand">Nationwide<span>.</span> Equity</div>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms &amp; Conditions</a>
+          <a href="/sms-policy">SMS Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Nationwide Equity LLC. All rights reserved.<br>
+        Nationwide Equity LLC, 2550 Pacific Ave Suite 700, Dallas, TX 75226 · 832-257-3367 · info@nationwideequity.us
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

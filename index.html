@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nationwide Equity — Stopping Foreclosure. Empowering Texas Homeowners.</title>
+  <meta name="description" content="Texas real estate solutions: stop foreclosure, sell as-is for cash, repair-funded listings, Subject To mortgage takeovers, heirship and title cleanup. Free consultation. Hablamos español." />
+  <meta property="og:title" content="Nationwide Equity — Texas Real Estate Solutions for Any Situation" />
+  <meta property="og:description" content="Stop foreclosure. Sell as-is. Repair-funded sales. Subject To mortgage takeovers. Heirship cleanup. We solve real estate problems for Texas homeowners — free consultation, Hablamos español." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nationwideequity.us" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-900: #061829;
+      --navy-800: #0A2540;
+      --navy-700: #143656;
+      --navy-600: #1F4A75;
+      --gold-500: #C9A24B;
+      --gold-400: #D4B570;
+      --gold-100: #F0E5C8;
+      --cream: #FAF7F2;
+      --cream-dark: #F2EDE3;
+      --white: #FFFFFF;
+      --text-900: #0A1929;
+      --text-700: #2D3A4B;
+      --text-500: #5C6B7E;
+      --text-300: #94A1B2;
+      --border: #E5DDD0;
+      --urgent: #B83A2B;
+      --success: #2D6A4F;
+
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      color: var(--text-900);
+      background: var(--cream);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ====== NAV ====== */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 0;
+    }
+    .logo {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--navy-800);
+      letter-spacing: -0.01em;
+    }
+    .logo span { color: var(--gold-500); }
+    .nav-links {
+      display: flex; gap: 36px; align-items: center;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-700);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--navy-800); }
+    .nav-cta {
+      display: flex; gap: 12px; align-items: center;
+    }
+    .lang-toggle {
+      display: flex;
+      background: var(--cream-dark);
+      border-radius: 999px;
+      padding: 3px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .lang-toggle button {
+      padding: 6px 12px;
+      border-radius: 999px;
+      color: var(--text-500);
+    }
+    .lang-toggle button.active {
+      background: var(--navy-800);
+      color: var(--white);
+    }
+    .btn-phone {
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 14px;
+      display: flex; align-items: center; gap: 8px;
+      transition: background 0.2s;
+    }
+    .btn-phone:hover { background: var(--navy-900); }
+    .nav-toggle { display: none; }
+
+    /* ====== HERO ====== */
+    .hero {
+      padding: 80px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, var(--gold-100) 0%, transparent 70%);
+      opacity: 0.5;
+      z-index: 0;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy-700);
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: var(--urgent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(40px, 5.5vw, 64px);
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--navy-900);
+      margin-bottom: 24px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-500);
+      font-weight: 400;
+    }
+    .hero-sub {
+      font-size: 19px;
+      color: var(--text-700);
+      margin-bottom: 36px;
+      max-width: 540px;
+      line-height: 1.55;
+    }
+    .hero-actions {
+      display: flex; gap: 14px; flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 16px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 15px;
+      display: inline-flex; align-items: center; gap: 10px;
+      transition: all 0.2s;
+    }
+    .btn-primary:hover {
+      background: var(--navy-900);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--navy-800);
+      border: 1.5px solid var(--navy-800);
+      padding: 16px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 15px;
+      display: inline-flex; align-items: center; gap: 10px;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: var(--navy-800);
+      color: var(--white);
+    }
+
+    .hero-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 30px 60px -20px rgba(10, 37, 64, 0.15);
+      border: 1px solid var(--border);
+    }
+    .hero-card h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy-800);
+      margin-bottom: 6px;
+    }
+    .hero-card p {
+      font-size: 14px;
+      color: var(--text-500);
+      margin-bottom: 20px;
+    }
+    .hero-card .urgent-list {
+      list-style: none;
+    }
+    .hero-card .urgent-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-700);
+    }
+    .hero-card .urgent-list li:first-child { border-top: none; }
+    .hero-card .urgent-list li::before {
+      content: '✓';
+      color: var(--gold-500);
+      font-weight: 700;
+      flex-shrink: 0;
+      width: 20px;
+      text-align: center;
+    }
+
+    /* ====== TRUST STRIP ====== */
+    .trust-strip {
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 32px 0;
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+    .trust-item {
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+    }
+    .trust-item:last-child { border-right: none; }
+    .trust-item .num {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--gold-400);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .trust-item .label {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+    }
+
+    /* ====== SECTIONS ====== */
+    section { padding: 100px 0; }
+    .section-eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold-500);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--navy-900);
+      margin-bottom: 20px;
+    }
+    .section-title em {
+      font-style: italic;
+      color: var(--gold-500);
+    }
+    .section-lead {
+      font-size: 18px;
+      color: var(--text-500);
+      max-width: 640px;
+      margin-bottom: 60px;
+      line-height: 1.6;
+    }
+
+    /* ====== SERVICES (4 BUCKETS) ====== */
+    .services {
+      background: var(--white);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -16px rgba(10, 37, 64, 0.12);
+      border-color: var(--gold-500);
+    }
+    .service-card .icon {
+      width: 56px; height: 56px;
+      background: var(--navy-800);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold-400);
+      margin-bottom: 24px;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .service-card h3 {
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--navy-900);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .service-card .tagline {
+      font-size: 15px;
+      color: var(--gold-500);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .service-card p {
+      font-size: 15px;
+      color: var(--text-700);
+      margin-bottom: 24px;
+      line-height: 1.65;
+    }
+    .service-card ul {
+      list-style: none;
+    }
+    .service-card ul li {
+      font-size: 14px;
+      color: var(--text-700);
+      padding: 6px 0;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .service-card ul li::before {
+      content: '—';
+      color: var(--gold-500);
+      flex-shrink: 0;
+    }
+
+    /* ====== HOW IT WORKS ====== */
+    .process {
+      background: var(--cream);
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      counter-reset: step;
+    }
+    .step {
+      position: relative;
+      padding-top: 32px;
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      top: 0; left: 0;
+      font-family: var(--serif);
+      font-size: 48px;
+      font-weight: 400;
+      color: var(--gold-500);
+      font-style: italic;
+      line-height: 1;
+    }
+    .step h4 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy-900);
+      margin: 40px 0 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .step p {
+      font-size: 15px;
+      color: var(--text-700);
+      line-height: 1.65;
+    }
+
+    /* ====== WHO WE HELP ====== */
+    .personas {
+      background: var(--navy-900);
+      color: var(--white);
+    }
+    .personas .section-title { color: var(--white); }
+    .personas .section-lead { color: rgba(255, 255, 255, 0.75); }
+    .personas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .persona {
+      background: var(--navy-800);
+      border-radius: 16px;
+      padding: 36px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .persona .badge {
+      display: inline-block;
+      background: rgba(201, 162, 75, 0.15);
+      color: var(--gold-400);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .persona h4 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+    .persona p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.65;
+    }
+
+    /* ====== FAQ ====== */
+    .faq-list {
+      max-width: 800px;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 28px 0;
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--navy-900);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .faq-question .plus {
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--sans);
+      font-size: 18px;
+      color: var(--navy-800);
+      transition: all 0.2s;
+    }
+    .faq-item.open .plus {
+      background: var(--navy-800);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-answer-inner {
+      padding-bottom: 28px;
+      font-size: 16px;
+      color: var(--text-700);
+      line-height: 1.7;
+      max-width: 680px;
+    }
+    .faq-item.open .faq-answer { max-height: 400px; }
+
+    /* ====== CONTACT ====== */
+    .contact {
+      background: var(--cream-dark);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .contact-method {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .contact-method:hover {
+      border-color: var(--gold-500);
+      transform: translateX(4px);
+    }
+    .contact-method .icon-box {
+      width: 44px; height: 44px;
+      background: var(--navy-800);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold-400);
+      flex-shrink: 0;
+      font-size: 20px;
+    }
+    .contact-method h5 {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--navy-900);
+      margin-bottom: 4px;
+    }
+    .contact-method p {
+      font-size: 14px;
+      color: var(--text-500);
+    }
+
+    /* ====== FORM ====== */
+    .contact-form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .form-field {
+      margin-bottom: 16px;
+    }
+    .form-field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-700);
+      margin-bottom: 6px;
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text-900);
+      background: var(--cream);
+      transition: border-color 0.2s;
+    }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--navy-800);
+      background: var(--white);
+    }
+    .form-field textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+    .checkbox-field {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 0;
+      font-size: 13px;
+      color: var(--text-700);
+      line-height: 1.5;
+    }
+    .checkbox-field input[type="checkbox"] {
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .form-submit {
+      width: 100%;
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 16px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 12px;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--navy-900); }
+    .form-disclaimer {
+      font-size: 11px;
+      color: var(--text-500);
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+    .form-disclaimer a { color: var(--navy-700); text-decoration: underline; }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: var(--navy-900);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 60px 0 30px;
+      font-size: 14px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 24px;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .footer-brand span { color: var(--gold-500); }
+    .footer h6 {
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+    .footer ul { list-style: none; }
+    .footer ul li { margin-bottom: 8px; }
+    .footer a:hover { color: var(--gold-400); }
+    .footer-bottom {
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* ====== CHATBOT WIDGET ====== */
+    .chat-bubble {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      width: 60px; height: 60px;
+      background: var(--navy-800);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 30px -8px rgba(10, 37, 64, 0.4);
+      z-index: 99;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--gold-400);
+      font-size: 24px;
+    }
+    .chat-bubble:hover { transform: scale(1.05); background: var(--navy-900); }
+    .chat-panel {
+      position: fixed;
+      bottom: 100px; right: 24px;
+      width: 380px; max-width: calc(100vw - 48px);
+      height: 540px; max-height: calc(100vh - 140px);
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 30px 60px -20px rgba(10, 37, 64, 0.3);
+      display: none;
+      flex-direction: column;
+      z-index: 99;
+      overflow: hidden;
+    }
+    .chat-panel.open { display: flex; }
+    .chat-header {
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 20px;
+    }
+    .chat-header h6 {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .chat-header p { font-size: 12px; opacity: 0.7; }
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .msg {
+      max-width: 80%;
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .msg.bot {
+      background: var(--cream);
+      color: var(--text-900);
+      align-self: flex-start;
+      border-bottom-left-radius: 4px;
+    }
+    .msg.user {
+      background: var(--navy-800);
+      color: var(--white);
+      align-self: flex-end;
+      border-bottom-right-radius: 4px;
+    }
+    .chat-input {
+      padding: 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 8px;
+    }
+    .chat-input input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 14px;
+    }
+    .chat-input button {
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* ====== MOBILE ====== */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; gap: 32px; }
+      .personas-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .trust-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .trust-item { border-right: none; }
+      .form-row { grid-template-columns: 1fr; }
+      section { padding: 70px 0; }
+      .hero { padding: 50px 0 70px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Nationwide<span>.</span> Equity</a>
+      <div class="nav-links">
+        <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+        <a href="#process" data-en="How It Works" data-es="Cómo Funciona">How It Works</a>
+        <a href="/knowledge" data-en="Knowledge" data-es="Recursos">Knowledge</a>
+        <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
+        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <div class="lang-toggle">
+          <button class="active" data-lang="en">EN</button>
+          <button data-lang="es">ES</button>
+        </div>
+        <a href="tel:+18322573367" class="btn-phone">
+          <span>📞</span><span data-en="Call Now" data-es="Llámanos">Call Now</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow" id="heroEyebrow">
+          <span data-en="Texas foreclosure help — confidential, no upfront cost" data-es="Ayuda con ejecución en Texas — confidencial, sin costo inicial">Texas foreclosure help — confidential, no upfront cost</span>
+        </div>
+        <h1 id="heroTitle">
+          <span data-en="Empowering homeowners." data-es="Empoderando propietarios.">Empowering homeowners.</span>
+          <em data-en="Stopping foreclosure." data-es="Deteniendo ejecuciones.">Stopping foreclosure.</em>
+        </h1>
+        <p class="hero-sub" id="heroSub" data-en="Behind on your mortgage? Behind on taxes? Inherited a property you can't sell? Got a foreclosure notice? There's almost always a way out — and we've helped Texas homeowners find it for years." data-es="¿Atrasado con la hipoteca? ¿Atrasado en los impuestos? ¿Heredaste una propiedad? ¿Recibiste un aviso de ejecución? Casi siempre hay una salida — y hemos ayudado a propietarios de Texas a encontrarla por años.">
+          Behind on your mortgage? Behind on taxes? Inherited a property you can't sell? Got a foreclosure notice? There's almost always a way out — and we've helped Texas homeowners find it for years.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            <span data-en="Get free consultation" data-es="Consulta gratuita">Get free consultation</span> →
+          </a>
+          <a href="tel:+18322573367" class="btn-secondary">
+            <span data-en="Call 832-257-3367" data-es="Llama 832-257-3367">Call 832-257-3367</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3 data-en="Got a foreclosure notice?" data-es="¿Recibiste un aviso de ejecución?">Got a foreclosure notice?</h3>
+        <p data-en="In Texas, foreclosure can happen in as little as 21 days. Here's what we can still do:" data-es="En Texas, la ejecución hipotecaria puede ocurrir en tan solo 21 días. Esto es lo que aún podemos hacer:">In Texas, foreclosure can happen in as little as 21 days. Here's what we can still do:</p>
+        <ul class="urgent-list">
+          <li data-en="Pause or delay the sale through emergency filings" data-es="Pausar o retrasar la venta mediante presentaciones de emergencia">Pause or delay the sale through emergency filings</li>
+          <li data-en="Negotiate with the lender for reinstatement or payoff" data-es="Negociar con el prestamista para reinstalación o liquidación">Negotiate with the lender for reinstatement or payoff</li>
+          <li data-en="Sell as-is for cash before the auction date" data-es="Vender tal como está por efectivo antes de la subasta">Sell as-is for cash before the auction date</li>
+          <li data-en="Fix title or heirship issues blocking a clean sale" data-es="Arreglar problemas de título o herencia que impiden una venta">Fix title or heirship issues blocking a clean sale</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRUST STRIP ====== -->
+  <div class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="num">100%</div>
+        <div class="label" data-en="Free, confidential consultation" data-es="Consulta gratuita y confidencial">Free, confidential consultation</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">$0</div>
+        <div class="label" data-en="Upfront cost. We're paid at closing." data-es="Costo inicial. Nos pagan al cierre.">Upfront cost. We're paid at closing.</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">ES / EN</div>
+        <div class="label" data-en="Hablamos español" data-es="We speak English">Hablamos español</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">24h</div>
+        <div class="label" data-en="Response time on urgent cases" data-es="Tiempo de respuesta para casos urgentes">Response time on urgent cases</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SERVICES (4 BUCKETS) ====== -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-eyebrow" data-en="What we do" data-es="Lo que hacemos">What we do</div>
+      <h2 class="section-title">
+        <span data-en="Four ways out of a" data-es="Cuatro salidas a una">Four ways out of a</span>
+        <em data-en="foreclosure situation." data-es="ejecución hipotecaria.">foreclosure situation.</em>
+      </h2>
+      <p class="section-lead" data-en="Most Texas homeowners don't realize how many options they actually have. We map your situation to the right path — and act fast." data-es="La mayoría de los propietarios en Texas no se dan cuenta de cuántas opciones realmente tienen. Mapeamos tu situación al camino correcto — y actuamos rápido.">Most Texas homeowners don't realize how many options they actually have. We map your situation to the right path — and act fast.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="icon">01</div>
+          <h3 data-en="Stop It" data-es="Deténla">Stop It</h3>
+          <div class="tagline" data-en="Emergency intervention" data-es="Intervención de emergencia">Emergency intervention</div>
+          <p data-en="If the sale is days away, we move fast. We coordinate emergency filings — including bankruptcy and temporary restraining orders — to pause the foreclosure and buy time to fix the underlying problem." data-es="Si la venta es en días, actuamos rápido. Coordinamos presentaciones de emergencia — incluyendo bancarrota y órdenes de restricción temporal — para pausar la ejecución y ganar tiempo para resolver el problema.">If the sale is days away, we move fast. We coordinate emergency filings — including bankruptcy and temporary restraining orders — to pause the foreclosure and buy time to fix the underlying problem.</p>
+          <ul>
+            <li data-en="Stop foreclosure sales the week before auction" data-es="Detener subastas la semana antes de la fecha">Stop foreclosure sales the week before auction</li>
+            <li data-en="Coordinate emergency bankruptcy filings" data-es="Coordinar presentaciones de bancarrota de emergencia">Coordinate emergency bankruptcy filings</li>
+            <li data-en="File TROs against improper foreclosure actions" data-es="Presentar órdenes de restricción contra acciones impropias">File TROs against improper foreclosure actions</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">02</div>
+          <h3 data-en="Delay It" data-es="Retrásala">Delay It</h3>
+          <div class="tagline" data-en="Buy time, negotiate terms" data-es="Gana tiempo, negocia términos">Buy time, negotiate terms</div>
+          <p data-en="Sometimes you don't need to stop the foreclosure forever — you need a few more months to catch up, sell on your terms, or refinance. We negotiate with mortgage companies and the county tax office to pause the timeline." data-es="A veces no necesitas detener la ejecución para siempre — necesitas unos meses más para ponerte al día, vender en tus términos, o refinanciar. Negociamos con compañías hipotecarias y la oficina de impuestos del condado.">Sometimes you don't need to stop the foreclosure forever — you need a few more months to catch up, sell on your terms, or refinance. We negotiate with mortgage companies and the county tax office to pause the timeline.</p>
+          <ul>
+            <li data-en="Negotiate mortgage payoff or reinstatement" data-es="Negociar liquidación o reinstalación de hipoteca">Negotiate mortgage payoff or reinstatement</li>
+            <li data-en="Set up tax payment plans with Harris County" data-es="Crear planes de pago de impuestos con el condado Harris">Set up tax payment plans with Harris County</li>
+            <li data-en="Arrange catch-up loans for mortgage or taxes" data-es="Arreglar préstamos para ponerte al día">Arrange catch-up loans for mortgage or taxes</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">03</div>
+          <h3 data-en="Challenge It" data-es="Dispútala">Challenge It</h3>
+          <div class="tagline" data-en="Fight what's wrong" data-es="Lucha contra lo incorrecto">Fight what's wrong</div>
+          <p data-en="Sometimes the foreclosure itself is the problem — wrong amount owed, defective title, dispute over inheritance, or improper procedure by the lender or county. We help homeowners challenge these issues and protect their equity." data-es="A veces la ejecución hipotecaria misma es el problema — cantidad incorrecta, título defectuoso, disputa de herencia, o procedimiento impropio. Ayudamos a propietarios a disputar estos problemas y proteger su patrimonio.">Sometimes the foreclosure itself is the problem — wrong amount owed, defective title, dispute over inheritance, or improper procedure by the lender or county. We help homeowners challenge these issues and protect their equity.</p>
+          <ul>
+            <li data-en="Fix defective title preventing a clean sale" data-es="Arreglar título defectuoso que impide la venta">Fix defective title preventing a clean sale</li>
+            <li data-en="Resolve inheritance and ownership disputes" data-es="Resolver disputas de herencia y propiedad">Resolve inheritance and ownership disputes</li>
+            <li data-en="Challenge errors by mortgage company or county" data-es="Disputar errores de la compañía hipotecaria o condado">Challenge errors by mortgage company or county</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">04</div>
+          <h3 data-en="Exit It" data-es="Sal de Ella">Exit It</h3>
+          <div class="tagline" data-en="Multiple ways to walk away clean" data-es="Múltiples formas de salir limpio">Multiple ways to walk away clean</div>
+          <p data-en="Keeping the home isn't always the right move. We give you three different ways to sell — pick whichever fits your situation, your timeline, and your equity. Includes heirship and probate cleanup for inherited properties." data-es="Quedarte con la casa no siempre es lo correcto. Te damos tres formas de vender — elige la que mejor se ajuste a tu situación, plazo y patrimonio. Incluye herencia y sucesión.">Keeping the home isn't always the right move. We give you three different ways to sell — pick whichever fits your situation, your timeline, and your equity. Includes heirship and probate cleanup for inherited properties.</p>
+          <ul>
+            <li data-en="Cash sale as-is — we buy it, no repairs, fast close" data-es="Venta en efectivo tal como está — sin reparaciones, cierre rápido">Cash sale as-is — we buy it, no repairs, fast close</li>
+            <li data-en="Repair-funded listing — we pay to fix it up, hire the agent, you keep more at closing" data-es="Listado con reparaciones — pagamos para arreglarla, contratamos al agente, te quedas con más al cierre">Repair-funded listing — we pay to fix it up, hire the agent, you keep more at closing</li>
+            <li data-en="Subject To takeover — we take over your mortgage, pay you cash, you walk away" data-es="Toma de hipoteca (Subject To) — tomamos tu hipoteca, te pagamos en efectivo, te vas">Subject To takeover — we take over your mortgage, pay you cash, you walk away</li>
+            <li data-en="Heirship and probate cleanup for inherited homes" data-es="Limpieza de herencia y sucesión para casas heredadas">Heirship and probate cleanup for inherited homes</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BEYOND FORECLOSURE — BROADER REAL ESTATE SOLUTIONS ====== -->
+  <section id="solutions" style="background: var(--navy-900); color: var(--white); padding: 100px 0; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -150px; left: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(201, 162, 75, 0.15) 0%, transparent 70%); z-index: 0;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-eyebrow" style="color: var(--gold-400);" data-en="Not facing foreclosure? We still help." data-es="¿No enfrentas ejecución? También ayudamos.">Not facing foreclosure? We still help.</div>
+      <h2 class="section-title" style="color: var(--white);">
+        <span data-en="Texas real estate solutions" data-es="Soluciones inmobiliarias en Texas">Texas real estate solutions</span>
+        <em data-en="for any situation." data-es="para cualquier situación.">for any situation.</em>
+      </h2>
+      <p class="section-lead" style="color: rgba(255,255,255,0.75);" data-en="Job relocation. Divorce. Downsize. Tired of renting it out. House needs work you can't afford. Whatever brought you here, we have an option that fits — and we make money on the property side, not on you." data-es="Reubicación laboral. Divorcio. Cambio de tamaño. Cansado de rentarla. La casa necesita reparaciones que no puedes pagar. Sea cual sea la razón, tenemos una opción que se ajusta — y ganamos dinero del lado de la propiedad, no de ti.">Job relocation. Divorce. Downsize. Tired of renting it out. House needs work you can't afford. Whatever brought you here, we have an option that fits — and we make money on the property side, not on you.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;" class="beyond-grid">
+
+        <!-- Subject To -->
+        <div style="background: var(--navy-800); border: 1px solid rgba(201, 162, 75, 0.3); border-radius: 20px; padding: 40px; position: relative;">
+          <span style="display: inline-block; background: var(--gold-500); color: var(--navy-900); font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 999px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px;" data-en="Our specialty" data-es="Nuestra especialidad">Our specialty</span>
+          <h3 style="font-family: var(--serif); font-size: 28px; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.01em;" data-en="Subject To mortgage takeover" data-es="Toma de hipoteca (Subject To)">Subject To mortgage takeover</h3>
+          <p style="font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; line-height: 1.65;" data-en="We take over your existing mortgage payments and pay you cash for the property. You walk away — no more payments, no more property. Best for low-equity situations where a traditional sale would leave you with almost nothing." data-es="Tomamos tus pagos de hipoteca actuales y te pagamos en efectivo por la propiedad. Te vas — sin más pagos, sin más propiedad. Mejor para situaciones de bajo patrimonio donde una venta tradicional te dejaría con casi nada.">We take over your existing mortgage payments and pay you cash for the property. You walk away — no more payments, no more property. Best for low-equity situations where a traditional sale would leave you with almost nothing.</p>
+          <ul style="list-style: none; font-size: 14px; color: rgba(255,255,255,0.85);">
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="Walk away with cash, even with low equity" data-es="Sal con efectivo, incluso con bajo patrimonio">Walk away with cash, even with low equity</span></li>
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="No realtor commissions, no closing costs to you" data-es="Sin comisiones de agente, sin costos de cierre">No realtor commissions, no closing costs to you</span></li>
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="Close in days, not months" data-es="Cierre en días, no meses">Close in days, not months</span></li>
+          </ul>
+          <p style="font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 16px; line-height: 1.5;" data-en="Note: With Subject To, the mortgage stays in your name while we make the payments. We explain every detail upfront — no surprises." data-es="Nota: Con Subject To, la hipoteca queda a tu nombre mientras nosotros hacemos los pagos. Explicamos cada detalle desde el principio — sin sorpresas.">Note: With Subject To, the mortgage stays in your name while we make the payments. We explain every detail upfront — no surprises.</p>
+        </div>
+
+        <!-- Repair-Funded Sale -->
+        <div style="background: var(--navy-800); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 40px;">
+          <span style="display: inline-block; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.9); font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 999px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px;" data-en="House needs work?" data-es="¿La casa necesita arreglos?">House needs work?</span>
+          <h3 style="font-family: var(--serif); font-size: 28px; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.01em;" data-en="Repair-funded sale" data-es="Venta con reparaciones financiadas">Repair-funded sale</h3>
+          <p style="font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; line-height: 1.65;" data-en="Got a house that needs work but you can't afford the repairs? We pay for the rehab upfront, hire the real estate agent, and get it sold at full retail value. You keep way more than you would from a cash sale — and you don't spend a dime out of pocket." data-es="¿Tienes una casa que necesita trabajo pero no puedes pagar las reparaciones? Pagamos la renovación, contratamos al agente, y la vendemos al precio completo. Te quedas con mucho más que con una venta en efectivo — y no gastas ni un centavo.">Got a house that needs work but you can't afford the repairs? We pay for the rehab upfront, hire the real estate agent, and get it sold at full retail value. You keep way more than you would from a cash sale — and you don't spend a dime out of pocket.</p>
+          <ul style="list-style: none; font-size: 14px; color: rgba(255,255,255,0.85);">
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="We pay for repairs, materials, and contractors" data-es="Pagamos reparaciones, materiales y contratistas">We pay for repairs, materials, and contractors</span></li>
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="We hire and manage the listing agent" data-es="Contratamos y manejamos al agente">We hire and manage the listing agent</span></li>
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="You get retail price, minus our agreed share" data-es="Recibes precio completo, menos nuestra parte acordada">You get retail price, minus our agreed share</span></li>
+          </ul>
+        </div>
+
+        <!-- Any Reason Sale -->
+        <div style="background: var(--navy-800); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 40px;">
+          <span style="display: inline-block; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.9); font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 999px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px;" data-en="Any reason, any condition" data-es="Cualquier razón, cualquier condición">Any reason, any condition</span>
+          <h3 style="font-family: var(--serif); font-size: 28px; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.01em;" data-en="Distressed sale, any situation" data-es="Venta en distress, cualquier situación">Distressed sale, any situation</h3>
+          <p style="font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; line-height: 1.65;" data-en="Job relocation. Divorce. Health issues. Tired landlord. Bad tenants. Hoarder cleanup. Fire or storm damage. We buy properties Texas-wide in any condition, for any reason — fast, fair, and with no judgment." data-es="Reubicación laboral. Divorcio. Salud. Cansado de ser arrendador. Malos inquilinos. Limpieza de acumuladores. Daño por fuego o tormenta. Compramos propiedades en todo Texas en cualquier condición, por cualquier razón — rápido, justo, sin juicio.">Job relocation. Divorce. Health issues. Tired landlord. Bad tenants. Hoarder cleanup. Fire or storm damage. We buy properties Texas-wide in any condition, for any reason — fast, fair, and with no judgment.</p>
+          <ul style="list-style: none; font-size: 14px; color: rgba(255,255,255,0.85);">
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="Fair cash offer in 24 hours" data-es="Oferta justa en efectivo en 24 horas">Fair cash offer in 24 hours</span></li>
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="You pick the closing date — fast or flexible" data-es="Tú eliges la fecha de cierre — rápido o flexible">You pick the closing date — fast or flexible</span></li>
+            <li style="padding: 6px 0; display: flex; gap: 10px;"><span style="color: var(--gold-400);">→</span> <span data-en="No repairs, no cleaning, leave what you want" data-es="Sin reparaciones, sin limpieza, deja lo que quieras">No repairs, no cleaning, leave what you want</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 56px;">
+        <a href="#contact" class="btn-primary" style="background: var(--gold-500); color: var(--navy-900);">
+          <span data-en="Tell us about your property" data-es="Cuéntanos sobre tu propiedad">Tell us about your property</span> →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @media (max-width: 900px) {
+      .beyond-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-eyebrow" data-en="How it works" data-es="Cómo funciona">How it works</div>
+      <h2 class="section-title">
+        <span data-en="A clear path forward in" data-es="Un camino claro en">A clear path forward in</span>
+        <em data-en="three steps." data-es="tres pasos.">three steps.</em>
+      </h2>
+      <p class="section-lead" data-en="No hard sell. No pressure. Just an honest look at your situation and the options actually available to you." data-es="Sin presión. Sin tácticas de venta. Solo una mirada honesta a tu situación y las opciones realmente disponibles.">No hard sell. No pressure. Just an honest look at your situation and the options actually available to you.</p>
+
+      <div class="process-steps">
+        <div class="step">
+          <h4 data-en="Tell us your situation" data-es="Cuéntanos tu situación">Tell us your situation</h4>
+          <p data-en="Call, text, or fill out the form. We'll ask a few questions to understand the property, the timeline, and what matters most to you. Takes about 15 minutes." data-es="Llama, envía un texto, o completa el formulario. Haremos algunas preguntas para entender la propiedad, el plazo, y lo que más te importa. Toma unos 15 minutos.">Call, text, or fill out the form. We'll ask a few questions to understand the property, the timeline, and what matters most to you. Takes about 15 minutes.</p>
+        </div>
+        <div class="step">
+          <h4 data-en="We map your options" data-es="Mapeamos tus opciones">We map your options</h4>
+          <p data-en="Within 24 hours, we come back with a clear breakdown of every path available — what each one costs, how long it takes, and what you walk away with." data-es="En 24 horas, regresamos con un desglose claro de cada camino disponible — cuánto cuesta cada uno, cuánto tiempo toma, y con qué te quedas.">Within 24 hours, we come back with a clear breakdown of every path available — what each one costs, how long it takes, and what you walk away with.</p>
+        </div>
+        <div class="step">
+          <h4 data-en="You decide. We act." data-es="Tú decides. Nosotros actuamos.">You decide. We act.</h4>
+          <p data-en="You pick the path. We handle the paperwork, the filings, the negotiation, the closing — whatever your situation requires. Most cases move within days, not months." data-es="Tú eliges el camino. Manejamos el papeleo, las presentaciones, la negociación, el cierre — lo que tu situación requiera. La mayoría de los casos avanzan en días, no meses.">You pick the path. We handle the paperwork, the filings, the negotiation, the closing — whatever your situation requires. Most cases move within days, not months.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WHO WE HELP ====== -->
+  <section class="personas">
+    <div class="container">
+      <div class="section-eyebrow" style="color: var(--gold-400);" data-en="Who we help" data-es="A quién ayudamos">Who we help</div>
+      <h2 class="section-title">
+        <span data-en="If any of this sounds like" data-es="Si algo de esto suena como">If any of this sounds like</span>
+        <em data-en="your situation, call us." data-es="tu situación, llámanos.">your situation, call us.</em>
+      </h2>
+      <p class="section-lead" data-en="We work with Texas homeowners across every kind of foreclosure situation. Here are the three most common." data-es="Trabajamos con propietarios en Texas en cada tipo de situación. Aquí están las tres más comunes.">We work with Texas homeowners across every kind of foreclosure situation. Here are the three most common.</p>
+
+      <div class="personas-grid">
+        <div class="persona">
+          <span class="badge" data-en="Behind on mortgage" data-es="Atrasado con la hipoteca">Behind on mortgage</span>
+          <h4 data-en="Lost a job, got sick, divorce — and now you're months behind." data-es="Perdiste el trabajo, te enfermaste, divorcio — y ahora estás meses atrasado.">Lost a job, got sick, divorce — and now you're months behind.</h4>
+          <p data-en="The bank is sending letters. Maybe you've already gotten a Notice of Sale. You don't know what your options are or who to trust. We've helped hundreds of Texas families through this exact moment." data-es="El banco te está mandando cartas. Tal vez ya recibiste el Aviso de Venta. No sabes cuáles son tus opciones o en quién confiar. Hemos ayudado a cientos de familias de Texas en este mismo momento.">The bank is sending letters. Maybe you've already gotten a Notice of Sale. You don't know what your options are or who to trust. We've helped hundreds of Texas families through this exact moment.</p>
+        </div>
+        <div class="persona">
+          <span class="badge" data-en="Inherited property" data-es="Propiedad heredada">Inherited property</span>
+          <h4 data-en="You inherited a house — but the deed is still in someone else's name." data-es="Heredaste una casa — pero la escritura sigue a nombre de otra persona.">You inherited a house — but the deed is still in someone else's name.</h4>
+          <p data-en="A parent or grandparent passed away. The property is sitting in limbo, maybe with back taxes piling up or foreclosure threatening. We handle heirship affidavits, probate, title cleanup — and can buy it directly if that's easier." data-es="Un padre o abuelo falleció. La propiedad está en el limbo, tal vez con impuestos atrasados acumulándose o ejecución amenazando. Manejamos afidávits de herencia, sucesión, limpieza de título — y podemos comprarla directamente.">A parent or grandparent passed away. The property is sitting in limbo, maybe with back taxes piling up or foreclosure threatening. We handle heirship affidavits, probate, title cleanup — and can buy it directly if that's easier.</p>
+        </div>
+        <div class="persona">
+          <span class="badge" data-en="Tax delinquent" data-es="Impuestos atrasados">Tax delinquent</span>
+          <h4 data-en="Property taxes spiraled. Harris County is moving toward seizure." data-es="Los impuestos se dispararon. El condado Harris se acerca a la incautación.">Property taxes spiraled. Harris County is moving toward seizure.</h4>
+          <p data-en="Texas property tax foreclosure is one of the fastest ways to lose a home. We negotiate payment plans with the county, arrange catch-up financing, or buy the property to stop the clock — whatever protects your equity." data-es="La ejecución por impuestos en Texas es una de las formas más rápidas de perder una casa. Negociamos planes de pago con el condado, arreglamos financiamiento para ponerte al día, o compramos la propiedad para detener el reloj.">Texas property tax foreclosure is one of the fastest ways to lose a home. We negotiate payment plans with the county, arrange catch-up financing, or buy the property to stop the clock — whatever protects your equity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section style="background: var(--cream); padding: 100px 0;">
+    <div class="container">
+      <div class="section-eyebrow" data-en="Real homeowners. Real outcomes." data-es="Propietarios reales. Resultados reales.">Real homeowners. Real outcomes.</div>
+      <h2 class="section-title">
+        <span data-en="What our" data-es="Lo que dicen">What our</span>
+        <em data-en="clients say." data-es="nuestros clientes.">clients say.</em>
+      </h2>
+      <p class="section-lead" data-en="Every story is different. The common thread: homeowners who thought they'd run out of options found out they hadn't." data-es="Cada historia es diferente. Lo que tienen en común: propietarios que pensaban que se habían quedado sin opciones descubrieron que no era así.">Every story is different. The common thread: homeowners who thought they'd run out of options found out they hadn't.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;" class="testimonial-grid">
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative;">
+          <div style="color: var(--gold-500); font-size: 18px; letter-spacing: 2px; margin-bottom: 16px;">★★★★★</div>
+          <p style="font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--navy-900); line-height: 1.5; margin-bottom: 20px;" data-en="&ldquo;They stopped my foreclosure sale with three days to go. I was sure I was losing the house my mother left me. They handled the heirship paperwork and got the lender to agree to a payoff plan. I still have the home.&rdquo;" data-es="&ldquo;Detuvieron la venta de mi casa con tres días de anticipación. Estaba seguro de que iba a perder la casa que me dejó mi madre. Manejaron el papeleo de herencia y lograron un plan de pago con el prestamista. Todavía tengo la casa.&rdquo;">&ldquo;They stopped my foreclosure sale with three days to go. I was sure I was losing the house my mother left me. They handled the heirship paperwork and got the lender to agree to a payoff plan. I still have the home.&rdquo;</p>
+          <div style="font-size: 13px; color: var(--text-500); font-weight: 600;">— M. Rodriguez, Houston</div>
+        </div>
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative;">
+          <div style="color: var(--gold-500); font-size: 18px; letter-spacing: 2px; margin-bottom: 16px;">★★★★★</div>
+          <p style="font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--navy-900); line-height: 1.5; margin-bottom: 20px;" data-en="&ldquo;After my husband passed, the taxes piled up and the county was about to seize the property. Nationwide Equity walked me through every option — and bought it from me as-is when that turned out to be the best path. They were honest from day one.&rdquo;" data-es="&ldquo;Después del fallecimiento de mi esposo, los impuestos se acumularon y el condado iba a embargar la propiedad. Nationwide Equity me explicó cada opción — y la compraron tal como estaba cuando resultó ser el mejor camino. Fueron honestos desde el primer día.&rdquo;">&ldquo;After my husband passed, the taxes piled up and the county was about to seize the property. Nationwide Equity walked me through every option — and bought it from me as-is when that turned out to be the best path. They were honest from day one.&rdquo;</p>
+          <div style="font-size: 13px; color: var(--text-500); font-weight: 600;">— J. Williams, Dallas</div>
+        </div>
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative;">
+          <div style="color: var(--gold-500); font-size: 18px; letter-spacing: 2px; margin-bottom: 16px;">★★★★★</div>
+          <p style="font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--navy-900); line-height: 1.5; margin-bottom: 20px;" data-en="&ldquo;I was four months behind on my mortgage and didn't know who to call. They got the lender to agree to a reinstatement plan I could actually afford. No upfront fees. Just real help from real people.&rdquo;" data-es="&ldquo;Estaba cuatro meses atrasado con la hipoteca y no sabía a quién llamar. Lograron un plan de reinstalación que realmente podía pagar. Sin costos iniciales. Solo ayuda real de gente real.&rdquo;">&ldquo;I was four months behind on my mortgage and didn't know who to call. They got the lender to agree to a reinstatement plan I could actually afford. No upfront fees. Just real help from real people.&rdquo;</p>
+          <div style="font-size: 13px; color: var(--text-500); font-weight: 600;">— D. Thompson, Houston</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="https://www.google.com/search?q=Nationwide+Equity+reviews" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; background: var(--white); border: 1px solid var(--border); border-radius: 999px; font-weight: 600; color: var(--navy-800); font-size: 14px;">
+          <span style="color: var(--gold-500); font-size: 16px;">★</span>
+          <span data-en="Read more reviews on Google" data-es="Lee más reseñas en Google">Read more reviews on Google</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @media (max-width: 900px) {
+      .testimonial-grid { grid-template-columns: 1fr !important; }
+    }
+
+    /* ====== MARKETS WE SERVE ====== */
+    .markets { padding: 110px 0 90px; background: var(--cream-dark); position: relative; overflow: hidden; }
+    .markets::before { content: ''; position: absolute; top: -50px; right: -50px; width: 400px; height: 400px; background: radial-gradient(circle, var(--gold-100) 0%, transparent 70%); opacity: 0.5; }
+    .markets-intro { max-width: 720px; margin-bottom: 56px; position: relative; z-index: 1; }
+    .markets-intro p { font-size: 19px; color: var(--text-700); line-height: 1.55; margin-top: 12px; }
+    .markets-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; position: relative; z-index: 1; }
+    @media (max-width: 900px) { .markets-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .markets-grid { grid-template-columns: 1fr; } }
+    .market-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 28px; transition: all 0.25s; }
+    .market-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -12px rgba(10, 37, 64, 0.15); border-color: var(--gold-500); }
+    .market-card .region-tag { display: inline-block; font-size: 11px; font-weight: 700; color: var(--gold-500); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+    .market-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--navy-900); margin-bottom: 8px; letter-spacing: -0.01em; }
+    .market-card .cities { font-size: 14px; color: var(--text-500); line-height: 1.6; margin-bottom: 14px; }
+    .market-card .county-line { font-size: 12px; color: var(--text-500); padding-top: 12px; border-top: 1px solid var(--border); font-style: italic; }
+    .markets-note { margin-top: 40px; text-align: center; font-size: 15px; color: var(--text-500); max-width: 600px; margin-left: auto; margin-right: auto; }
+    .markets-note strong { color: var(--navy-800); }
+
+    /* ====== KNOWLEDGE PREVIEW ====== */
+    .knowledge-preview { padding: 110px 0 90px; }
+    .knowledge-preview-header { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 48px; flex-wrap: wrap; }
+    .knowledge-preview-header .head-text { flex: 1; min-width: 320px; }
+    .knowledge-preview-header .head-cta a { font-size: 14px; font-weight: 600; color: var(--navy-800); text-decoration: none; padding: 12px 22px; border: 1.5px solid var(--navy-800); border-radius: 999px; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+    .knowledge-preview-header .head-cta a:hover { background: var(--navy-800); color: var(--white); }
+    .knowledge-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; grid-template-rows: auto auto; gap: 18px; }
+    .knowledge-grid > a:first-child { grid-row: span 2; }
+    @media (max-width: 900px) { 
+      .knowledge-grid { grid-template-columns: 1fr; }
+      .knowledge-grid > a:first-child { grid-row: auto; }
+    }
+    .knowledge-card { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 32px; text-decoration: none; color: inherit; transition: all 0.3s; display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; }
+    .knowledge-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -16px rgba(10, 37, 64, 0.12); border-color: var(--gold-500); }
+    .knowledge-card.featured { background: var(--navy-900); color: var(--white); border-color: var(--navy-900); padding: 44px; position: relative; overflow: hidden; }
+    .knowledge-card.featured::before { content: ''; position: absolute; bottom: -150px; right: -150px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(201,162,75,0.15) 0%, transparent 70%); }
+    .knowledge-card.featured .kc-cat { color: var(--gold-400); }
+    .knowledge-card.featured h3 { color: var(--white); font-size: 32px; }
+    .knowledge-card.featured .kc-desc { color: rgba(255,255,255,0.8); font-size: 16px; }
+    .knowledge-card.featured .kc-meta { color: rgba(255,255,255,0.6); }
+    .knowledge-card .kc-cat { font-size: 11px; font-weight: 700; color: var(--gold-500); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; }
+    .knowledge-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--navy-900); line-height: 1.2; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .knowledge-card .kc-desc { font-size: 14px; color: var(--text-500); line-height: 1.55; margin-bottom: 18px; flex: 1; }
+    .knowledge-card .kc-meta { font-size: 12px; color: var(--text-500); font-weight: 500; display: flex; gap: 14px; flex-wrap: wrap; }
+  </style>
+
+  <!-- ====== MARKETS WE SERVE ====== -->
+  <section id="markets" class="markets">
+    <div class="container">
+      <div class="markets-intro">
+        <div class="section-eyebrow" data-en="Where we work" data-es="Dónde trabajamos">Where we work</div>
+        <h2 class="section-title">
+          <span data-en="Serving homeowners" data-es="Sirviendo a propietarios">Serving homeowners</span>
+          <em data-en="across Texas." data-es="en todo Texas.">across Texas.</em>
+        </h2>
+        <p data-en="From Houston to El Paso, Dallas to McAllen — we work statewide. Whether your property is in a major metro or a small town, the Texas Property Code and Texas Estates Code apply the same way, and we have the relationships and infrastructure to handle it." data-es="De Houston a El Paso, de Dallas a McAllen — trabajamos en todo el estado. Sea que tu propiedad esté en una gran ciudad o un pueblo pequeño, el Código de Propiedad de Texas y el Código de Sucesiones de Texas aplican igual, y tenemos las relaciones e infraestructura para manejarlo.">From Houston to El Paso, Dallas to McAllen — we work statewide. Whether your property is in a major metro or a small town, the Texas Property Code and Texas Estates Code apply the same way, and we have the relationships and infrastructure to handle it.</p>
+      </div>
+
+      <div class="markets-grid">
+
+        <div class="market-card">
+          <div class="region-tag">Southeast Texas</div>
+          <h3>Houston Metro</h3>
+          <div class="cities">Houston, Sugar Land, Pearland, Pasadena, The Woodlands, Katy, Cypress, Spring, Humble, Baytown, Conroe, League City</div>
+          <div class="county-line">Harris, Fort Bend, Montgomery, Galveston, Brazoria, Liberty counties</div>
+        </div>
+
+        <div class="market-card">
+          <div class="region-tag">North Texas</div>
+          <h3>DFW Metroplex</h3>
+          <div class="cities">Dallas, Fort Worth, Arlington, Plano, Irving, Garland, Frisco, McKinney, Mesquite, Denton, Carrollton, Richardson</div>
+          <div class="county-line">Dallas, Tarrant, Collin, Denton, Rockwall, Kaufman, Ellis counties</div>
+        </div>
+
+        <div class="market-card">
+          <div class="region-tag">Central Texas</div>
+          <h3>Austin–San Antonio Corridor</h3>
+          <div class="cities">San Antonio, Austin, Round Rock, New Braunfels, Cedar Park, Pflugerville, Georgetown, San Marcos, Schertz, Killeen, Temple, Waco</div>
+          <div class="county-line">Bexar, Travis, Williamson, Hays, Comal, Bell, McLennan counties</div>
+        </div>
+
+        <div class="market-card">
+          <div class="region-tag">East Texas</div>
+          <h3>Tyler &amp; The Pines</h3>
+          <div class="cities">Tyler, Longview, Marshall, Nacogdoches, Lufkin, Texarkana, Paris, Sulphur Springs, Henderson, Athens, Palestine, Beaumont, Port Arthur</div>
+          <div class="county-line">Smith, Gregg, Harrison, Nacogdoches, Angelina, Bowie, Jefferson, Orange counties</div>
+        </div>
+
+        <div class="market-card">
+          <div class="region-tag">South Texas</div>
+          <h3>Rio Grande Valley &amp; Coast</h3>
+          <div class="cities">McAllen, Brownsville, Edinburg, Harlingen, Pharr, Mission, Corpus Christi, Laredo, Victoria, Eagle Pass, Del Rio, Kingsville</div>
+          <div class="county-line">Hidalgo, Cameron, Nueces, Webb, Victoria, Maverick counties</div>
+        </div>
+
+        <div class="market-card">
+          <div class="region-tag">West Texas</div>
+          <h3>West Texas &amp; Panhandle</h3>
+          <div class="cities">El Paso, Midland, Odessa, Lubbock, Amarillo, Abilene, San Angelo, Wichita Falls, Big Spring, Andrews, Plainview, Pampa</div>
+          <div class="county-line">El Paso, Midland, Ector, Lubbock, Potter, Randall, Taylor, Tom Green counties</div>
+        </div>
+
+      </div>
+
+      <p class="markets-note" data-en="Don't see your city? We handle properties anywhere in Texas. Call us — if it's a Texas property with a Texas problem, we work on it." data-es="¿No ves tu ciudad? Manejamos propiedades en cualquier parte de Texas. Llámanos — si es una propiedad en Texas con un problema en Texas, trabajamos con ella."><strong>Don't see your city?</strong> We handle properties anywhere in Texas. Call us — if it's a Texas property with a Texas problem, we work on it.</p>
+    </div>
+  </section>
+
+  <!-- ====== KNOWLEDGE PREVIEW ====== -->
+  <section class="knowledge-preview">
+    <div class="container">
+      <div class="knowledge-preview-header">
+        <div class="head-text">
+          <div class="section-eyebrow" data-en="Knowledge Center" data-es="Centro de Conocimiento">Knowledge Center</div>
+          <h2 class="section-title">
+            <span data-en="Learn first," data-es="Aprende primero,">Learn first,</span>
+            <em data-en="decide better." data-es="decide mejor.">decide better.</em>
+          </h2>
+        </div>
+        <div class="head-cta">
+          <a href="/knowledge" data-en="Browse all guides →" data-es="Ver todas las guías →">Browse all guides →</a>
+        </div>
+      </div>
+
+      <div class="knowledge-grid">
+
+        <a href="/knowledge/texas-foreclosure-timeline" class="knowledge-card featured">
+          <div>
+            <div class="kc-cat">⭐ Start Here · Texas Statutes</div>
+            <h3>The Texas Foreclosure Timeline: Your Complete Guide</h3>
+            <p class="kc-desc">From the first missed payment to the courthouse auction — every step the lender takes, every right you have under Texas Property Code §51.002, and exactly how much time you have to act.</p>
+          </div>
+          <div class="kc-meta">
+            <span>📖 12 min read</span>
+            <span>⚖ Tex. Prop. Code §51.002</span>
+          </div>
+        </a>
+
+        <a href="/knowledge/how-to-stop-foreclosure-texas" class="knowledge-card">
+          <div>
+            <div class="kc-cat">DIY Solutions</div>
+            <h3>7 Ways to Stop Foreclosure in Texas</h3>
+            <p class="kc-desc">Every option that actually works — and when each one applies.</p>
+          </div>
+          <div class="kc-meta"><span>📖 14 min read</span></div>
+        </a>
+
+        <a href="/knowledge/affidavit-of-heirship-texas" class="knowledge-card">
+          <div>
+            <div class="kc-cat">Inheritance</div>
+            <h3>Affidavit of Heirship in Texas: Complete Guide</h3>
+            <p class="kc-desc">When you don't need probate to inherit Texas real estate.</p>
+          </div>
+          <div class="kc-meta"><span>📖 11 min read</span></div>
+        </a>
+
+        <a href="/knowledge/foreclosure-myths-texas" class="knowledge-card">
+          <div>
+            <div class="kc-cat">Misconceptions</div>
+            <h3>5 Foreclosure Myths That Cost Homeowners</h3>
+            <p class="kc-desc">Dangerous misconceptions that paralyze homeowners into losing their homes.</p>
+          </div>
+          <div class="kc-meta"><span>📖 9 min read</span></div>
+        </a>
+
+        <a href="/knowledge/subject-to-real-estate-explained" class="knowledge-card">
+          <div>
+            <div class="kc-cat">Creative Real Estate</div>
+            <h3>Subject To Explained: Is It Safe?</h3>
+            <p class="kc-desc">Honest pros, cons, and the safeguards that protect sellers.</p>
+          </div>
+          <div class="kc-meta"><span>📖 13 min read</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== FAQ ====== -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-eyebrow" data-en="Common questions" data-es="Preguntas comunes">Common questions</div>
+      <h2 class="section-title">
+        <span data-en="Answers" data-es="Respuestas">Answers</span>
+        <em data-en="before you call." data-es="antes de llamar.">before you call.</em>
+      </h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="How much does this cost me?" data-es="¿Cuánto me cuesta esto?">How much does this cost me?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="The initial consultation is always free. After that, our fees come out of the closing or settlement — meaning if we buy your house or help you sell, we're paid from those proceeds. For negotiation and filing services, fees vary by case and are discussed transparently upfront. No surprise bills." data-es="La consulta inicial es siempre gratis. Después, nuestros honorarios salen del cierre o acuerdo — si compramos tu casa o te ayudamos a venderla, nos pagan de esas ganancias. Para servicios de negociación, los honorarios varían y se discuten de forma transparente. Sin facturas sorpresa.">The initial consultation is always free. After that, our fees come out of the closing or settlement — meaning if we buy your house or help you sell, we're paid from those proceeds. For negotiation and filing services, fees vary by case and are discussed transparently upfront. No surprise bills.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="My foreclosure sale is in a few days. Is it too late?" data-es="Mi venta es en unos días. ¿Es demasiado tarde?">My foreclosure sale is in a few days. Is it too late?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="Usually no. In Texas, we can often pause or delay a sale right up to the day before through emergency filings, lender negotiation, or a fast cash sale. The sooner you call, the more options stay on the table — but we've helped homeowners with 48 hours to go." data-es="Generalmente no. En Texas, podemos pausar o retrasar una venta hasta el día antes mediante presentaciones de emergencia, negociación con prestamista, o una venta rápida en efectivo. Mientras antes llames, más opciones tienes — pero hemos ayudado a propietarios con 48 horas restantes.">Usually no. In Texas, we can often pause or delay a sale right up to the day before through emergency filings, lender negotiation, or a fast cash sale. The sooner you call, the more options stay on the table — but we've helped homeowners with 48 hours to go.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="The house is in my deceased parent's name. Can you still help?" data-es="La casa está a nombre de mi padre fallecido. ¿Pueden ayudar?">The house is in my deceased parent's name. Can you still help?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="Yes — this is one of our most common situations. We handle affidavits of heirship, probate filings, and title cleanup so the property can be sold, refinanced, or kept by the rightful heirs. If foreclosure is also happening, we coordinate both tracks at once." data-es="Sí — esta es una de nuestras situaciones más comunes. Manejamos afidávits de herederos, presentaciones de sucesión, y limpieza de título para que la propiedad pueda venderse, refinanciarse, o quedarse con los herederos legítimos. Si también hay ejecución, coordinamos ambos procesos.">Yes — this is one of our most common situations. We handle affidavits of heirship, probate filings, and title cleanup so the property can be sold, refinanced, or kept by the rightful heirs. If foreclosure is also happening, we coordinate both tracks at once.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="What is &ldquo;Subject To&rdquo; and is it safe?" data-es="¿Qué es &ldquo;Subject To&rdquo; y es seguro?">What is &ldquo;Subject To&rdquo; and is it safe?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="Subject To is a creative finance arrangement where we take over your existing mortgage payments and pay you cash for the property — but the mortgage stays in your name on the bank's records. It's a real, legal arrangement used for over a century, especially helpful when you don't have much equity. The key risk to be honest about: your name stays on the loan, so if we ever stopped paying, your credit would be affected. That's why we structure every deal with safeguards — we set aside reserves, we put the deed in a trust, and our track record is on the line. We walk you through every protection in detail before you sign anything." data-es="Subject To es un arreglo financiero creativo donde tomamos tus pagos de hipoteca actuales y te pagamos en efectivo por la propiedad — pero la hipoteca queda a tu nombre en los registros del banco. Es un arreglo legal usado por más de un siglo, especialmente útil cuando no tienes mucho patrimonio. El riesgo a ser honestos: tu nombre queda en el préstamo, así que si dejáramos de pagar, tu crédito se afectaría. Por eso estructuramos cada acuerdo con protecciones — apartamos reservas, ponemos la escritura en un fideicomiso, y nuestro historial está en juego. Te explicamos cada protección en detalle antes de firmar.">Subject To is a creative finance arrangement where we take over your existing mortgage payments and pay you cash for the property — but the mortgage stays in your name on the bank's records. It's a real, legal arrangement used for over a century, especially helpful when you don't have much equity. The key risk to be honest about: your name stays on the loan, so if we ever stopped paying, your credit would be affected. That's why we structure every deal with safeguards — we set aside reserves, we put the deed in a trust, and our track record is on the line. We walk you through every protection in detail before you sign anything.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="My house needs major repairs. Won't I get pennies on the dollar?" data-es="Mi casa necesita reparaciones grandes. ¿No me darán muy poco?">My house needs major repairs. Won't I get pennies on the dollar?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="Not with us. Most &ldquo;cash buyers&rdquo; lowball you because they need to discount for repair costs and their profit margin. We offer a different path: we pay for the repairs upfront, hire a licensed real estate agent, and sell at full retail. You walk away with significantly more than a typical cash offer, and you don't spend a dollar out of pocket. We agree on the split before any work begins, so there are no surprises." data-es="No con nosotros. La mayoría de los compradores en efectivo te ofrecen poco porque tienen que descontar las reparaciones y su margen. Nosotros ofrecemos otro camino: pagamos las reparaciones, contratamos un agente licenciado, y vendemos al precio completo. Te llevas mucho más que con una oferta típica en efectivo, y no gastas ni un dólar. Acordamos el reparto antes de comenzar — sin sorpresas.">Not with us. Most &ldquo;cash buyers&rdquo; lowball you because they need to discount for repair costs and their profit margin. We offer a different path: we pay for the repairs upfront, hire a licensed real estate agent, and sell at full retail. You walk away with significantly more than a typical cash offer, and you don't spend a dollar out of pocket. We agree on the split before any work begins, so there are no surprises.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="Are you a law firm?" data-es="¿Son una firma de abogados?">Are you a law firm?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="No — Nationwide Equity is a real estate solutions company. For situations that require legal action (bankruptcy filings, TROs, ownership disputes), we coordinate with licensed Texas attorneys in our network. You always know who's doing what, and you only sign documents you fully understand." data-es="No — Nationwide Equity es una compañía de soluciones inmobiliarias. Para situaciones que requieren acción legal (bancarrota, órdenes de restricción, disputas de propiedad), coordinamos con abogados licenciados de Texas en nuestra red. Siempre sabes quién hace qué.">No — Nationwide Equity is a real estate solutions company. For situations that require legal action (bankruptcy filings, TROs, ownership disputes), we coordinate with licensed Texas attorneys in our network. You always know who's doing what, and you only sign documents you fully understand.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-en="What's the catch? Why are you doing this?" data-es="¿Cuál es el truco? ¿Por qué hacen esto?">What's the catch? Why are you doing this?</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-en="We make money when a property changes hands — either we buy it directly, or we help you sell it on the open market. That's it. There's no upfront fee, no monthly charge, no hidden cost. Our incentive is aligned with yours: a clean outcome that protects your equity." data-es="Ganamos dinero cuando una propiedad cambia de manos — la compramos directamente, o te ayudamos a venderla en el mercado abierto. Eso es todo. Sin honorarios iniciales, sin cargos mensuales, sin costos ocultos. Nuestro incentivo está alineado con el tuyo.">We make money when a property changes hands — either we buy it directly, or we help you sell it on the open market. That's it. There's no upfront fee, no monthly charge, no hidden cost. Our incentive is aligned with yours: a clean outcome that protects your equity.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="section-eyebrow" data-en="Get in touch" data-es="Contáctanos">Get in touch</div>
+        <h2 class="section-title">
+          <span data-en="Four ways to" data-es="Cuatro formas de">Four ways to</span>
+          <em data-en="reach us." data-es="contactarnos.">reach us.</em>
+        </h2>
+        <p style="font-size: 17px; color: var(--text-700); margin-bottom: 16px;" data-en="Pick whatever feels easiest. We respond fast — usually within an hour during business hours." data-es="Elige lo que sea más fácil. Respondemos rápido — usualmente dentro de una hora en horario laboral.">Pick whatever feels easiest. We respond fast — usually within an hour during business hours.</p>
+
+        <div class="contact-methods">
+          <a href="tel:+18322573367" class="contact-method">
+            <div class="icon-box">📞</div>
+            <div>
+              <h5 data-en="Call us" data-es="Llámanos">Call us</h5>
+              <p>832-257-3367 — <span data-en="9am–7pm Mon–Sat" data-es="9am–7pm Lun–Sáb">9am–7pm Mon–Sat</span></p>
+            </div>
+          </a>
+          <a href="sms:+13464519887" class="contact-method">
+            <div class="icon-box">💬</div>
+            <div>
+              <h5 data-en="Text us" data-es="Envíanos un texto">Text us</h5>
+              <p data-en="Quick reply, no phone-tag" data-es="Respuesta rápida, sin esperas">Quick reply, no phone-tag</p>
+            </div>
+          </a>
+          <div class="contact-method" onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})">
+            <div class="icon-box">✉</div>
+            <div>
+              <h5 data-en="Send a message" data-es="Envía un mensaje">Send a message</h5>
+              <p data-en="Use the form — we respond in under 24 hours" data-es="Usa el formulario — respondemos en menos de 24 horas">Use the form — we respond in under 24 hours</p>
+            </div>
+          </div>
+          <div class="contact-method" onclick="toggleChat()">
+            <div class="icon-box">⚡</div>
+            <div>
+              <h5 data-en="Chat with us now" data-es="Chatea con nosotros ahora">Chat with us now</h5>
+              <p data-en="Instant answers — anytime, day or night" data-es="Respuestas instantáneas — día o noche">Instant answers — anytime, day or night</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+        <h3 style="font-family: var(--serif); font-size: 24px; color: var(--navy-900); margin-bottom: 8px;" data-en="Tell us about your situation" data-es="Cuéntanos tu situación">Tell us about your situation</h3>
+        <p style="font-size: 14px; color: var(--text-500); margin-bottom: 24px;" data-en="Confidential. No obligation." data-es="Confidencial. Sin compromiso.">Confidential. No obligation.</p>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label data-en="First name" data-es="Nombre">First name</label>
+            <input type="text" name="firstName" required>
+          </div>
+          <div class="form-field">
+            <label data-en="Last name" data-es="Apellido">Last name</label>
+            <input type="text" name="lastName" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label data-en="Phone number" data-es="Número de teléfono">Phone number</label>
+          <input type="tel" name="phone" required placeholder="832-257-3367">
+        </div>
+
+        <div class="form-field">
+          <label data-en="Property address (optional)" data-es="Dirección de la propiedad (opcional)">Property address (optional)</label>
+          <input type="text" name="address" placeholder="City, TX (e.g. Houston, Dallas, San Antonio)">
+        </div>
+
+        <div class="form-field">
+          <label data-en="What's going on?" data-es="¿Qué está pasando?">What's going on?</label>
+          <select name="situation" required>
+            <option value="" data-en="Choose one" data-es="Elige una">Choose one</option>
+            <option value="behind-mortgage" data-en="Behind on mortgage payments" data-es="Atrasado con pagos de hipoteca">Behind on mortgage payments</option>
+            <option value="behind-taxes" data-en="Behind on property taxes" data-es="Atrasado con impuestos">Behind on property taxes</option>
+            <option value="foreclosure-notice" data-en="Got a foreclosure notice" data-es="Recibí aviso de ejecución">Got a foreclosure notice</option>
+            <option value="inherited" data-en="Inherited a property" data-es="Heredé una propiedad">Inherited a property</option>
+            <option value="title-problem" data-en="Title or ownership problem" data-es="Problema de título o propiedad">Title or ownership problem</option>
+            <option value="want-to-sell" data-en="Want to sell as-is for cash" data-es="Quiero vender tal como está en efectivo">Want to sell as-is for cash</option>
+            <option value="repair-fund" data-en="House needs repairs — want repair-funded sale" data-es="La casa necesita reparaciones — venta con reparaciones financiadas">House needs repairs — want repair-funded sale</option>
+            <option value="subject-to" data-en="Open to mortgage takeover (Subject To)" data-es="Abierto a toma de hipoteca (Subject To)">Open to mortgage takeover (Subject To)</option>
+            <option value="life-event" data-en="Selling due to life event (divorce, relocation, etc.)" data-es="Vendiendo por evento de vida (divorcio, mudanza, etc.)">Selling due to life event (divorce, relocation, etc.)</option>
+            <option value="tired-landlord" data-en="Tired landlord — want to sell rental" data-es="Cansado de ser arrendador — quiero vender renta">Tired landlord — want to sell rental</option>
+            <option value="other" data-en="Something else" data-es="Otra cosa">Something else</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label data-en="Anything else we should know? (optional)" data-es="¿Algo más que debamos saber? (opcional)">Anything else we should know? (optional)</label>
+          <textarea name="notes"></textarea>
+        </div>
+
+        <label class="checkbox-field">
+          <input type="checkbox" name="consentTransactional">
+          <span data-en="I consent to receive non-marketing text messages from Nationwide Equity LLC about my consultation request, foreclosure case updates, document and appointment notifications, and service-related communications. Message frequency may vary, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out." data-es="Doy mi consentimiento para recibir mensajes de texto no comerciales de Nationwide Equity LLC sobre mi solicitud de consulta, actualizaciones de mi caso de ejecución hipotecaria, notificaciones de documentos y citas, y comunicaciones relacionadas al servicio. La frecuencia de mensajes puede variar, y pueden aplicar tarifas de mensajes y datos. Escribe HELP para ayuda, responde STOP para cancelar.">I consent to receive non-marketing text messages from Nationwide Equity LLC about my consultation request, foreclosure case updates, document and appointment notifications, and service-related communications. Message frequency may vary, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+        </label>
+
+        <label class="checkbox-field">
+          <input type="checkbox" name="consentMarketing">
+          <span data-en="I consent to receive marketing text messages, about special offers, discounts, and service updates, from Nationwide Equity LLC at the phone number provided. Message frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out." data-es="Doy mi consentimiento para recibir mensajes de texto de marketing sobre ofertas especiales, descuentos y actualizaciones de servicios, de Nationwide Equity LLC al número de teléfono proporcionado. La frecuencia de mensajes puede variar. Pueden aplicar tarifas de mensajes y datos. Escribe HELP para ayuda, responde STOP para cancelar.">I consent to receive marketing text messages, about special offers, discounts, and service updates, from Nationwide Equity LLC at the phone number provided. Message frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+        </label>
+
+        <button type="submit" class="form-submit" data-en="Get my free consultation" data-es="Obtén mi consulta gratuita">Get my free consultation</button>
+
+        <p class="form-disclaimer" data-en="Both consent checkboxes above are optional — you can submit this form without checking them and we'll still respond by phone or email. By submitting, you agree to our Privacy Policy and Terms &amp; Conditions. No mobile information will be shared with third parties or affiliates for marketing or promotional purposes." data-es="Ambas casillas de consentimiento son opcionales — puedes enviar este formulario sin marcarlas y aún responderemos por teléfono o correo. Al enviar, aceptas nuestra Política de Privacidad y Términos y Condiciones. No compartiremos información móvil con terceros o afiliados con fines de marketing o promocionales.">Both consent checkboxes above are optional — you can submit this form without checking them and we'll still respond by phone or email. By submitting, you agree to our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms &amp; Conditions</a>. No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Nationwide<span>.</span> Equity</div>
+          <p style="margin-bottom: 16px; max-width: 320px;" data-en="Empowering homeowners. Stopping foreclosure. Securing your future. Serving Texas homeowners statewide." data-es="Empoderando propietarios. Deteniendo ejecuciones hipotecarias. Asegurando tu futuro. Sirviendo a propietarios de Texas en todo el estado.">Empowering homeowners. Stopping foreclosure. Securing your future. Serving Texas homeowners statewide.</p>
+          <p style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6;">Nationwide Equity LLC<br>2550 Pacific Ave, Suite 700<br>Dallas, TX 75226<br><br><a href="tel:+18322573367" style="color: var(--gold-400);">832-257-3367</a><br><a href="mailto:info@nationwideequity.us" style="color: var(--gold-400);">info@nationwideequity.us</a></p>
+        </div>
+        <div>
+          <h6 data-en="Services" data-es="Servicios">Services</h6>
+          <ul>
+            <li><a href="#services" data-en="Stop foreclosure" data-es="Detener ejecución">Stop foreclosure</a></li>
+            <li><a href="#services" data-en="Delay foreclosure" data-es="Retrasar ejecución">Delay foreclosure</a></li>
+            <li><a href="#services" data-en="Challenge foreclosure" data-es="Disputar ejecución">Challenge foreclosure</a></li>
+            <li><a href="#services" data-en="Sell as-is for cash" data-es="Vender en efectivo">Sell as-is for cash</a></li>
+            <li><a href="#services" data-en="Repair-funded sale" data-es="Venta con reparaciones">Repair-funded sale</a></li>
+            <li><a href="#services" data-en="Subject To mortgage takeover" data-es="Toma de hipoteca">Subject To mortgage takeover</a></li>
+            <li><a href="#services" data-en="Heirship &amp; probate help" data-es="Herencia y sucesión">Heirship &amp; probate help</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 data-en="Company" data-es="Compañía">Company</h6>
+          <ul>
+            <li><a href="#process" data-en="How it works" data-es="Cómo funciona">How it works</a></li>
+            <li><a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a></li>
+            <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 data-en="Legal" data-es="Legal">Legal</h6>
+          <ul>
+            <li><a href="/privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a></li>
+            <li><a href="/terms" data-en="Terms & Conditions" data-es="Términos">Terms & Conditions</a></li>
+            <li><a href="/sms-policy" data-en="SMS / Messaging Policy" data-es="Política de Mensajes">SMS / Messaging Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nationwide Equity LLC. All rights reserved.</span>
+        <span data-en="Nationwide Equity is a real estate solutions company, not a law firm. We coordinate with licensed Texas attorneys for legal services." data-es="Nationwide Equity es una compañía de soluciones inmobiliarias, no una firma de abogados. Coordinamos con abogados licenciados de Texas para servicios legales.">Nationwide Equity is a real estate solutions company, not a law firm. We coordinate with licensed Texas attorneys for legal services.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== CHAT WIDGET ====== -->
+  <button class="chat-bubble" onclick="toggleChat()" aria-label="Open chat">💬</button>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <h6 data-en="Chat with Nationwide Equity" data-es="Chatea con Nationwide Equity">Chat with Nationwide Equity</h6>
+      <p data-en="Confidential — no obligation" data-es="Confidencial — sin compromiso">Confidential — no obligation</p>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg bot" data-en="Hi! I'm here on behalf of Nationwide Equity. Whatever foreclosure situation you're facing, there's almost always a way out — and I can help you figure out yours. What's going on?" data-es="¡Hola! Estoy aquí de parte de Nationwide Equity. Sea cual sea la situación de ejecución hipotecaria que enfrentas, casi siempre hay una salida — y puedo ayudarte a encontrar la tuya. ¿Qué está pasando?">Hi! I'm here on behalf of Nationwide Equity. Whatever foreclosure situation you're facing, there's almost always a way out — and I can help you figure out yours. What's going on?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendChat()">
+      <button onclick="sendChat()" data-en="Send" data-es="Enviar">Send</button>
+    </div>
+  </div>
+
+  <script>
+    // ====== LANGUAGE TOGGLE ======
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        const text = el.getAttribute('data-' + lang);
+        if (text) {
+          // Handle option elements specially
+          if (el.tagName === 'OPTION') el.textContent = text;
+          else if (el.tagName === 'INPUT' && el.placeholder) el.placeholder = text;
+          else el.textContent = text;
+        }
+      });
+      document.querySelectorAll('.lang-toggle button').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+      localStorage.setItem('alamoLang', lang);
+    }
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+    // Auto-detect on first load
+    const savedLang = localStorage.getItem('alamoLang');
+    const browserLang = navigator.language.startsWith('es') ? 'es' : 'en';
+    setLanguage(savedLang || browserLang);
+
+    // ====== DYNAMIC HERO BY TRAFFIC SOURCE ======
+    const heroVariants = {
+      stop: {
+        eyebrow: { en: "⏰ Urgent: foreclosure timeline", es: "⏰ Urgente: plazo de ejecución" },
+        title_en: "Got a foreclosure notice?",
+        title_es: "¿Recibiste un aviso?",
+        em_en: "You have options. Don't wait.",
+        em_es: "Tienes opciones. No esperes.",
+        sub_en: "In Texas, foreclosure can happen in as little as 21 days from notice. We help Texas homeowners pause sales, negotiate payoffs, and stop foreclosure — sometimes the day before auction. Free consultation, 24-hour response.",
+        sub_es: "En Texas, la ejecución hipotecaria puede ocurrir en tan solo 21 días desde el aviso. Ayudamos a pausar ventas, negociar liquidaciones, y detener ejecuciones — a veces el día antes de la subasta."
+      },
+      inherit: {
+        eyebrow: { en: "Inherited property help", es: "Ayuda con propiedad heredada" },
+        title_en: "Inherited a house you can't sell?",
+        title_es: "¿Heredaste una casa que no puedes vender?",
+        em_en: "We fix that.",
+        em_es: "Lo arreglamos.",
+        sub_en: "Deed in a deceased parent's name? Back taxes piling up? Sibling disputes? We handle heirship affidavits, probate, title cleanup, and tax negotiation — so the property can finally be sold, refinanced, or kept by the rightful heirs.",
+        sub_es: "¿Escritura a nombre de un padre fallecido? ¿Impuestos atrasados? ¿Disputas familiares? Manejamos afidávits de herencia, sucesión, limpieza de título, y negociación de impuestos — para que la propiedad pueda venderse, refinanciarse, o quedarse con los herederos."
+      },
+      behind: {
+        eyebrow: { en: "Behind on payments?", es: "¿Atrasado con los pagos?" },
+        title_en: "Falling behind on your mortgage?",
+        title_es: "¿Atrasándote en la hipoteca?",
+        em_en: "You have more options than the bank tells you.",
+        em_es: "Tienes más opciones de las que el banco dice.",
+        sub_en: "Job loss, illness, divorce — life happens, and the bank's letters get scarier every week. We negotiate with mortgage companies for payoff reductions, reinstatement plans, and catch-up loans. Or we'll buy the property as-is if that's the better move.",
+        sub_es: "Pérdida de trabajo, enfermedad, divorcio — la vida pasa, y las cartas del banco son cada vez más aterradoras. Negociamos con compañías hipotecarias para reducciones, planes de reinstalación, y préstamos. O compramos la propiedad tal como está."
+      },
+      asis: {
+        eyebrow: { en: "Sell as-is for cash", es: "Vende tal como está por efectivo" },
+        title_en: "Sell your Texas house as-is.",
+        title_es: "Vende tu casa de Texas tal como está.",
+        em_en: "No repairs. No agents. No waiting.",
+        em_es: "Sin reparaciones. Sin agentes. Sin esperas.",
+        sub_en: "Whatever shape it's in, whatever the situation — foreclosure, inheritance, tax problems, title issues — we buy Texas properties as-is. Fair cash offer in 24 hours. You pick the closing date. No commissions, no fees, no surprises.",
+        sub_es: "Sea cual sea su estado, sea cual sea la situación — ejecución, herencia, impuestos, título — compramos propiedades en Texas tal como están. Oferta justa en efectivo en 24 horas. Tú eliges la fecha de cierre."
+      },
+      subjectto: {
+        eyebrow: { en: "Subject To mortgage takeover", es: "Toma de hipoteca (Subject To)" },
+        title_en: "Walk away from your mortgage —",
+        title_es: "Sal de tu hipoteca —",
+        em_en: "we take it over.",
+        em_es: "la tomamos nosotros.",
+        sub_en: "Don't have enough equity for a traditional sale? We take over your existing mortgage payments and pay you cash for the property. You walk away — no more payments, no more property, no commissions. Best for low-equity situations.",
+        sub_es: "¿No tienes suficiente patrimonio para una venta tradicional? Tomamos tus pagos de hipoteca actuales y te pagamos en efectivo por la propiedad. Te vas — sin más pagos, sin más propiedad, sin comisiones. Mejor para situaciones de bajo patrimonio."
+      },
+      repair: {
+        eyebrow: { en: "House needs repairs?", es: "¿La casa necesita reparaciones?" },
+        title_en: "We'll pay to fix it.",
+        title_es: "Pagaremos por arreglarla.",
+        em_en: "You keep more at closing.",
+        em_es: "Te quedas con más al cierre.",
+        sub_en: "Don't take pennies on the dollar from a cash buyer. We pay for the repairs, hire the real estate agent, and sell at full retail price. You walk away with significantly more — and don't spend a dollar out of pocket along the way.",
+        sub_es: "No aceptes una miseria de un comprador en efectivo. Pagamos las reparaciones, contratamos al agente, y vendemos al precio completo. Te llevas mucho más — sin gastar un solo dólar."
+      },
+      anyreason: {
+        eyebrow: { en: "Need to sell — any reason", es: "Necesitas vender — cualquier razón" },
+        title_en: "Whatever brought you here,",
+        title_es: "Sea cual sea tu razón,",
+        em_en: "we have an option that fits.",
+        em_es: "tenemos una opción que se ajusta.",
+        sub_en: "Divorce. Job relocation. Tired landlord. Health issues. Inherited property. Bad tenants. We buy Texas properties in any condition, for any reason — fast, fair, no judgment. Cash, Subject To, or repair-funded sale, whichever fits best.",
+        sub_es: "Divorcio. Mudanza laboral. Cansado de ser arrendador. Salud. Propiedad heredada. Malos inquilinos. Compramos propiedades en Texas en cualquier condición, por cualquier razón — rápido, justo, sin juicio. Efectivo, Subject To, o venta con reparaciones."
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const campaign = params.get('campaign');
+    if (campaign && heroVariants[campaign]) {
+      const v = heroVariants[campaign];
+      const lang = document.documentElement.lang;
+      document.getElementById('heroEyebrow').querySelector('span').textContent = v.eyebrow[lang];
+      document.getElementById('heroEyebrow').querySelector('span').setAttribute('data-en', v.eyebrow.en);
+      document.getElementById('heroEyebrow').querySelector('span').setAttribute('data-es', v.eyebrow.es);
+
+      const titleEl = document.getElementById('heroTitle');
+      titleEl.innerHTML = `<span data-en="${v.title_en}" data-es="${v.title_es}">${lang === 'es' ? v.title_es : v.title_en}</span> <em data-en="${v.em_en}" data-es="${v.em_es}">${lang === 'es' ? v.em_es : v.em_en}</em>`;
+
+      const subEl = document.getElementById('heroSub');
+      subEl.setAttribute('data-en', v.sub_en);
+      subEl.setAttribute('data-es', v.sub_es);
+      subEl.textContent = lang === 'es' ? v.sub_es : v.sub_en;
+    }
+
+    // ====== FAQ ACCORDION ======
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        item.classList.toggle('open');
+      });
+    });
+
+    // ====== CHATBOT ======
+    const chatHistory = [];
+    function toggleChat() {
+      document.getElementById('chatPanel').classList.toggle('open');
+    }
+    async function sendChat() {
+      const input = document.getElementById('chatInput');
+      const msg = input.value.trim();
+      if (!msg) return;
+      input.value = '';
+
+      const messagesEl = document.getElementById('chatMessages');
+      const userBubble = document.createElement('div');
+      userBubble.className = 'msg user';
+      userBubble.textContent = msg;
+      messagesEl.appendChild(userBubble);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+
+      chatHistory.push({ role: 'user', content: msg });
+
+      try {
+        const response = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: chatHistory })
+        });
+        const data = await response.json();
+        const botText = data.reply || (data.content && data.content[0] && data.content[0].text) || 'Sorry, something went wrong.';
+
+        const botBubble = document.createElement('div');
+        botBubble.className = 'msg bot';
+        botBubble.textContent = botText;
+        messagesEl.appendChild(botBubble);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+
+        chatHistory.push({ role: 'assistant', content: botText });
+      } catch (err) {
+        const errBubble = document.createElement('div');
+        errBubble.className = 'msg bot';
+        errBubble.textContent = 'Sorry — having trouble connecting. Please call us at 832-257-3367.';
+        messagesEl.appendChild(errBubble);
+      }
+    }
+
+    // ====== FORM SUBMIT ======
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+
+      // POST to your backend endpoint — wire to GoHighLevel webhook or /api/contact
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...data,
+          source: params.get('campaign') || 'organic',
+          utm_source: params.get('utm_source') || '',
+          utm_medium: params.get('utm_medium') || '',
+          utm_campaign: params.get('utm_campaign') || '',
+          submittedAt: new Date().toISOString()
+        })
+      }).then(() => {
+        form.innerHTML = `
+          <div style="text-align:center; padding: 40px 0;">
+            <div style="font-size: 48px; margin-bottom: 16px;">✓</div>
+            <h3 style="font-family: var(--serif); font-size: 26px; color: var(--navy-900); margin-bottom: 12px;">
+              ${document.documentElement.lang === 'es' ? 'Mensaje recibido' : 'Got your message'}
+            </h3>
+            <p style="color: var(--text-700); max-width: 400px; margin: 0 auto;">
+              ${document.documentElement.lang === 'es' ? 'Te contactaremos en menos de 24 horas. Si es urgente, llama al 832-257-3367 ahora.' : "We'll reach out within 24 hours. If it's urgent, call 832-257-3367 now."}
+            </p>
+          </div>
+        `;
+      }).catch(() => {
+        alert(document.documentElement.lang === 'es' ? 'Hubo un error. Por favor llámanos al 832-257-3367.' : 'There was an error. Please call us at 832-257-3367.');
+      });
+    }
+  </script>
+</body>
+</html>
