@@ -817,7 +817,8 @@
         <a href="#process" data-en="How It Works" data-es="Cómo Funciona">How It Works</a>
         <a href="/knowledge" data-en="Knowledge" data-es="Recursos">Knowledge</a>
         <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
-        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        <a href="/chat" data-en="Ask AI" data-es="Preguntar AI">Ask AI</a>
+        <a href="/contact" data-en="Contact" data-es="Contacto">Contact</a>
       </div>
       <div class="nav-cta">
         <div class="lang-toggle">
@@ -846,7 +847,7 @@
           Behind on your mortgage? Behind on taxes? Inherited a property you can't sell? Got a foreclosure notice? There's almost always a way out — and we've helped Texas homeowners find it for years.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn-primary">
+          <a href="/contact" class="btn-primary">
             <span data-en="Get free consultation" data-es="Consulta gratuita">Get free consultation</span> →
           </a>
           <a href="tel:+18322573367" class="btn-secondary">
@@ -1008,7 +1009,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 56px;">
-        <a href="#contact" class="btn-primary" style="background: var(--gold-500); color: var(--navy-900);">
+        <a href="/contact" class="btn-primary" style="background: var(--gold-500); color: var(--navy-900);">
           <span data-en="Tell us about your property" data-es="Cuéntanos sobre tu propiedad">Tell us about your property</span> →
         </a>
       </div>
@@ -1380,115 +1381,55 @@
     </div>
   </section>
 
-  <!-- ====== CONTACT ====== -->
+    <!-- ====== CONTACT CTA (replaces inline form — form is now on /contact page) ====== -->
   <section id="contact" class="contact">
-    <div class="container contact-grid">
-      <div>
-        <div class="section-eyebrow" data-en="Get in touch" data-es="Contáctanos">Get in touch</div>
-        <h2 class="section-title">
-          <span data-en="Four ways to" data-es="Cuatro formas de">Four ways to</span>
-          <em data-en="reach us." data-es="contactarnos.">reach us.</em>
-        </h2>
-        <p style="font-size: 17px; color: var(--text-700); margin-bottom: 16px;" data-en="Pick whatever feels easiest. We respond fast — usually within an hour during business hours." data-es="Elige lo que sea más fácil. Respondemos rápido — usualmente dentro de una hora en horario laboral.">Pick whatever feels easiest. We respond fast — usually within an hour during business hours.</p>
+    <div class="container" style="max-width: 900px; text-align: center;">
+      <div class="section-eyebrow" data-en="Get in touch" data-es="Contáctanos">Get in touch</div>
+      <h2 class="section-title" style="margin-bottom: 24px;">
+        <span data-en="Four ways to" data-es="Cuatro formas de">Four ways to</span>
+        <em data-en="reach us." data-es="contactarnos.">reach us.</em>
+      </h2>
+      <p style="font-size: 17px; color: var(--text-700); margin-bottom: 40px;" data-en="Pick whatever works easiest. We respond fast — usually within an hour during business hours." data-es="Elige lo que sea más fácil. Respondemos rápido — usualmente dentro de una hora en horario laboral.">Pick whatever works easiest. We respond fast — usually within an hour during business hours.</p>
 
-        <div class="contact-methods">
-          <a href="tel:+18322573367" class="contact-method">
-            <div class="icon-box">📞</div>
-            <div>
-              <h5 data-en="Call us" data-es="Llámanos">Call us</h5>
-              <p>832-257-3367 — <span data-en="9am–7pm Mon–Sat" data-es="9am–7pm Lun–Sáb">9am–7pm Mon–Sat</span></p>
-            </div>
-          </a>
-          <a href="sms:+13464519887" class="contact-method">
-            <div class="icon-box">💬</div>
-            <div>
-              <h5 data-en="Text us" data-es="Envíanos un texto">Text us</h5>
-              <p data-en="Quick reply, no phone-tag" data-es="Respuesta rápida, sin esperas">Quick reply, no phone-tag</p>
-            </div>
-          </a>
-          <div class="contact-method" onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})">
-            <div class="icon-box">✉</div>
-            <div>
-              <h5 data-en="Send a message" data-es="Envía un mensaje">Send a message</h5>
-              <p data-en="Use the form — we respond in under 24 hours" data-es="Usa el formulario — respondemos en menos de 24 horas">Use the form — we respond in under 24 hours</p>
-            </div>
+      <div class="contact-methods" style="max-width: 700px; margin: 0 auto 40px;">
+        <a href="tel:+18322573367" class="contact-method">
+          <div class="icon-box">📞</div>
+          <div>
+            <h5 data-en="Call us" data-es="Llámanos">Call us</h5>
+            <p>832-257-3367 — <span data-en="9am–7pm Mon–Sat" data-es="9am–7pm Lun–Sáb">9am–7pm Mon–Sat</span></p>
           </div>
-          <div class="contact-method" onclick="toggleChat()">
-            <div class="icon-box">⚡</div>
-            <div>
-              <h5 data-en="Chat with us now" data-es="Chatea con nosotros ahora">Chat with us now</h5>
-              <p data-en="Instant answers — anytime, day or night" data-es="Respuestas instantáneas — día o noche">Instant answers — anytime, day or night</p>
-            </div>
+        </a>
+        <a href="sms:+13464519887" class="contact-method">
+          <div class="icon-box">💬</div>
+          <div>
+            <h5 data-en="Text us" data-es="Envíanos un texto">Text us</h5>
+            <p data-en="Quick reply, no phone-tag" data-es="Respuesta rápida, sin esperas">Quick reply, no phone-tag</p>
           </div>
-        </div>
+        </a>
+        <a href="/contact" class="contact-method">
+          <div class="icon-box">✉</div>
+          <div>
+            <h5 data-en="Send a message" data-es="Envía un mensaje">Send a message</h5>
+            <p data-en="Use our contact form — we respond in under 24 hours" data-es="Usa nuestro formulario — respondemos en menos de 24 horas">Use our contact form — we respond in under 24 hours</p>
+          </div>
+        </a>
+        <a href="/chat" class="contact-method">
+          <div class="icon-box">⚡</div>
+          <div>
+            <h5 data-en="Chat with our AI assistant" data-es="Chatea con nuestro asistente AI">Chat with our AI assistant</h5>
+            <p data-en="Instant answers, day or night" data-es="Respuestas instantáneas, día o noche">Instant answers, day or night</p>
+          </div>
+        </a>
       </div>
 
-      <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
-        <h3 style="font-family: var(--serif); font-size: 24px; color: var(--navy-900); margin-bottom: 8px;" data-en="Tell us about your situation" data-es="Cuéntanos tu situación">Tell us about your situation</h3>
-        <p style="font-size: 14px; color: var(--text-500); margin-bottom: 24px;" data-en="Confidential. No obligation." data-es="Confidencial. Sin compromiso.">Confidential. No obligation.</p>
-
-        <div class="form-row">
-          <div class="form-field">
-            <label data-en="First name" data-es="Nombre">First name</label>
-            <input type="text" name="firstName" required>
-          </div>
-          <div class="form-field">
-            <label data-en="Last name" data-es="Apellido">Last name</label>
-            <input type="text" name="lastName" required>
-          </div>
-        </div>
-
-        <div class="form-field">
-          <label data-en="Phone number" data-es="Número de teléfono">Phone number</label>
-          <input type="tel" name="phone" required placeholder="832-257-3367">
-        </div>
-
-        <div class="form-field">
-          <label data-en="Property address (optional)" data-es="Dirección de la propiedad (opcional)">Property address (optional)</label>
-          <input type="text" name="address" placeholder="City, TX (e.g. Houston, Dallas, San Antonio)">
-        </div>
-
-        <div class="form-field">
-          <label data-en="What's going on?" data-es="¿Qué está pasando?">What's going on?</label>
-          <select name="situation" required>
-            <option value="" data-en="Choose one" data-es="Elige una">Choose one</option>
-            <option value="behind-mortgage" data-en="Behind on mortgage payments" data-es="Atrasado con pagos de hipoteca">Behind on mortgage payments</option>
-            <option value="behind-taxes" data-en="Behind on property taxes" data-es="Atrasado con impuestos">Behind on property taxes</option>
-            <option value="foreclosure-notice" data-en="Got a foreclosure notice" data-es="Recibí aviso de ejecución">Got a foreclosure notice</option>
-            <option value="inherited" data-en="Inherited a property" data-es="Heredé una propiedad">Inherited a property</option>
-            <option value="title-problem" data-en="Title or ownership problem" data-es="Problema de título o propiedad">Title or ownership problem</option>
-            <option value="want-to-sell" data-en="Want to sell as-is for cash" data-es="Quiero vender tal como está en efectivo">Want to sell as-is for cash</option>
-            <option value="repair-fund" data-en="House needs repairs — want repair-funded sale" data-es="La casa necesita reparaciones — venta con reparaciones financiadas">House needs repairs — want repair-funded sale</option>
-            <option value="subject-to" data-en="Open to mortgage takeover (Subject To)" data-es="Abierto a toma de hipoteca (Subject To)">Open to mortgage takeover (Subject To)</option>
-            <option value="life-event" data-en="Selling due to life event (divorce, relocation, etc.)" data-es="Vendiendo por evento de vida (divorcio, mudanza, etc.)">Selling due to life event (divorce, relocation, etc.)</option>
-            <option value="tired-landlord" data-en="Tired landlord — want to sell rental" data-es="Cansado de ser arrendador — quiero vender renta">Tired landlord — want to sell rental</option>
-            <option value="other" data-en="Something else" data-es="Otra cosa">Something else</option>
-          </select>
-        </div>
-
-        <div class="form-field">
-          <label data-en="Anything else we should know? (optional)" data-es="¿Algo más que debamos saber? (opcional)">Anything else we should know? (optional)</label>
-          <textarea name="notes"></textarea>
-        </div>
-
-        <label class="checkbox-field">
-          <input type="checkbox" name="consentTransactional">
-          <span data-en="I consent to receive non-marketing text messages from Nationwide Equity LLC about my consultation request, foreclosure case updates, document and appointment notifications, and service-related communications. Message frequency may vary, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out." data-es="Doy mi consentimiento para recibir mensajes de texto no comerciales de Nationwide Equity LLC sobre mi solicitud de consulta, actualizaciones de mi caso de ejecución hipotecaria, notificaciones de documentos y citas, y comunicaciones relacionadas al servicio. La frecuencia de mensajes puede variar, y pueden aplicar tarifas de mensajes y datos. Escribe HELP para ayuda, responde STOP para cancelar.">I consent to receive non-marketing text messages from Nationwide Equity LLC about my consultation request, foreclosure case updates, document and appointment notifications, and service-related communications. Message frequency may vary, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
-        </label>
-
-        <label class="checkbox-field">
-          <input type="checkbox" name="consentMarketing">
-          <span data-en="I consent to receive marketing text messages, about special offers, discounts, and service updates, from Nationwide Equity LLC at the phone number provided. Message frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out." data-es="Doy mi consentimiento para recibir mensajes de texto de marketing sobre ofertas especiales, descuentos y actualizaciones de servicios, de Nationwide Equity LLC al número de teléfono proporcionado. La frecuencia de mensajes puede variar. Pueden aplicar tarifas de mensajes y datos. Escribe HELP para ayuda, responde STOP para cancelar.">I consent to receive marketing text messages, about special offers, discounts, and service updates, from Nationwide Equity LLC at the phone number provided. Message frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
-        </label>
-
-        <button type="submit" class="form-submit" data-en="Get my free consultation" data-es="Obtén mi consulta gratuita">Get my free consultation</button>
-
-        <p class="form-disclaimer" data-en="Both consent checkboxes above are optional — you can submit this form without checking them and we'll still respond by phone or email. By submitting, you agree to our Privacy Policy and Terms &amp; Conditions. No mobile information will be shared with third parties or affiliates for marketing or promotional purposes." data-es="Ambas casillas de consentimiento son opcionales — puedes enviar este formulario sin marcarlas y aún responderemos por teléfono o correo. Al enviar, aceptas nuestra Política de Privacidad y Términos y Condiciones. No compartiremos información móvil con terceros o afiliados con fines de marketing o promocionales.">Both consent checkboxes above are optional — you can submit this form without checking them and we'll still respond by phone or email. By submitting, you agree to our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms &amp; Conditions</a>. No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</p>
-      </form>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="/contact" class="btn-primary"><span data-en="Get free consultation" data-es="Consulta gratuita">Get free consultation</span> →</a>
+        <a href="tel:+18322573367" class="btn-secondary"><span data-en="Or call now" data-es="O llama ahora">Or call now</span></a>
+      </div>
     </div>
   </section>
 
-  <!-- ====== FOOTER ====== -->
+<!-- ====== FOOTER ====== -->
   <footer>
     <div class="container">
       <div class="footer-grid">
@@ -1514,7 +1455,8 @@
           <ul>
             <li><a href="#process" data-en="How it works" data-es="Cómo funciona">How it works</a></li>
             <li><a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a></li>
-            <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+            <li><a href="/chat" data-en="Ask AI" data-es="Preguntar AI">Ask AI</a>
+        <a href="/contact" data-en="Contact" data-es="Contacto">Contact</a></li>
           </ul>
         </div>
         <div>
@@ -1532,22 +1474,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- ====== CHAT WIDGET ====== -->
-  <button class="chat-bubble" onclick="toggleChat()" aria-label="Open chat">💬</button>
-  <div class="chat-panel" id="chatPanel">
-    <div class="chat-header">
-      <h6 data-en="Chat with Nationwide Equity" data-es="Chatea con Nationwide Equity">Chat with Nationwide Equity</h6>
-      <p data-en="Confidential — no obligation" data-es="Confidencial — sin compromiso">Confidential — no obligation</p>
-    </div>
-    <div class="chat-messages" id="chatMessages">
-      <div class="msg bot" data-en="Hi! I'm here on behalf of Nationwide Equity. Whatever foreclosure situation you're facing, there's almost always a way out — and I can help you figure out yours. What's going on?" data-es="¡Hola! Estoy aquí de parte de Nationwide Equity. Sea cual sea la situación de ejecución hipotecaria que enfrentas, casi siempre hay una salida — y puedo ayudarte a encontrar la tuya. ¿Qué está pasando?">Hi! I'm here on behalf of Nationwide Equity. Whatever foreclosure situation you're facing, there's almost always a way out — and I can help you figure out yours. What's going on?</div>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendChat()">
-      <button onclick="sendChat()" data-en="Send" data-es="Enviar">Send</button>
-    </div>
-  </div>
 
   <script>
     // ====== LANGUAGE TOGGLE ======
@@ -1668,84 +1594,10 @@
       });
     });
 
-    // ====== CHATBOT ======
-    const chatHistory = [];
-    function toggleChat() {
-      document.getElementById('chatPanel').classList.toggle('open');
-    }
-    async function sendChat() {
-      const input = document.getElementById('chatInput');
-      const msg = input.value.trim();
-      if (!msg) return;
-      input.value = '';
+      </script>
 
-      const messagesEl = document.getElementById('chatMessages');
-      const userBubble = document.createElement('div');
-      userBubble.className = 'msg user';
-      userBubble.textContent = msg;
-      messagesEl.appendChild(userBubble);
-      messagesEl.scrollTop = messagesEl.scrollHeight;
+  <!-- ====== GHL CHAT WIDGET (A2P-registered opt-in) ====== -->
+  <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a12a94bc10b3bb0033f7ed5" data-source="WEB_USER"></script>
 
-      chatHistory.push({ role: 'user', content: msg });
-
-      try {
-        const response = await fetch('/api/chat', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ messages: chatHistory })
-        });
-        const data = await response.json();
-        const botText = data.reply || (data.content && data.content[0] && data.content[0].text) || 'Sorry, something went wrong.';
-
-        const botBubble = document.createElement('div');
-        botBubble.className = 'msg bot';
-        botBubble.textContent = botText;
-        messagesEl.appendChild(botBubble);
-        messagesEl.scrollTop = messagesEl.scrollHeight;
-
-        chatHistory.push({ role: 'assistant', content: botText });
-      } catch (err) {
-        const errBubble = document.createElement('div');
-        errBubble.className = 'msg bot';
-        errBubble.textContent = 'Sorry — having trouble connecting. Please call us at 832-257-3367.';
-        messagesEl.appendChild(errBubble);
-      }
-    }
-
-    // ====== FORM SUBMIT ======
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = e.target;
-      const data = Object.fromEntries(new FormData(form));
-
-      // POST to your backend endpoint — wire to GoHighLevel webhook or /api/contact
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          source: params.get('campaign') || 'organic',
-          utm_source: params.get('utm_source') || '',
-          utm_medium: params.get('utm_medium') || '',
-          utm_campaign: params.get('utm_campaign') || '',
-          submittedAt: new Date().toISOString()
-        })
-      }).then(() => {
-        form.innerHTML = `
-          <div style="text-align:center; padding: 40px 0;">
-            <div style="font-size: 48px; margin-bottom: 16px;">✓</div>
-            <h3 style="font-family: var(--serif); font-size: 26px; color: var(--navy-900); margin-bottom: 12px;">
-              ${document.documentElement.lang === 'es' ? 'Mensaje recibido' : 'Got your message'}
-            </h3>
-            <p style="color: var(--text-700); max-width: 400px; margin: 0 auto;">
-              ${document.documentElement.lang === 'es' ? 'Te contactaremos en menos de 24 horas. Si es urgente, llama al 832-257-3367 ahora.' : "We'll reach out within 24 hours. If it's urgent, call 832-257-3367 now."}
-            </p>
-          </div>
-        `;
-      }).catch(() => {
-        alert(document.documentElement.lang === 'es' ? 'Hubo un error. Por favor llámanos al 832-257-3367.' : 'There was an error. Please call us at 832-257-3367.');
-      });
-    }
-  </script>
 </body>
 </html>
