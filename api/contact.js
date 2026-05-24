@@ -81,7 +81,7 @@ export default async function handler(req, res) {
       name,
       email: email.toLowerCase(),
       phone: normalizePhone(phone),
-      source: 'nationwideequity.us — Web Form',
+      source: 'nationwide-equity.com — Web Form',
       tags: buildTags(body, toBool),
       propertyAddress,
       situation: (body.situation || '').trim(),
