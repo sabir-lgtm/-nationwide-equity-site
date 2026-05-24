@@ -25,13 +25,39 @@ export default async function handler(req, res) {
   }
 
   try {
-    const body = req.body || {};
-    const userMessage = (body.message || '').trim();
-    const history = Array.isArray(body.history) ? body.history : [];
+    // Robust body parsing — Vercel SHOULD auto-parse JSON, but doesn't always
+    let body = req.body || {};
+    if (typeof body === 'string') {
+      try { body = JSON.parse(body); } catch (e) { body = {}; }
+    }
+    
+    console.log('Chat request received. Body type:', typeof req.body, 'Keys:', Object.keys(body));
+    
     const lang = body.lang === 'es' ? 'es' : 'en';
     
+    // Accept both payload formats:
+    //   Format A: { message: "current text", history: [...past msgs...] }
+    //   Format B: { messages: [...all msgs with last one being current...] }   <-- what the website widget sends
+    let userMessage = '';
+    let history = [];
+    
+    if (Array.isArray(body.messages) && body.messages.length > 0) {
+      // Format B — extract last user message as current, rest as history
+      const allMsgs = body.messages;
+      const lastMsg = allMsgs[allMsgs.length - 1];
+      userMessage = (lastMsg && lastMsg.content ? lastMsg.content : '').trim();
+      history = allMsgs.slice(0, -1);
+    } else {
+      // Format A
+      userMessage = (body.message || '').trim();
+      history = Array.isArray(body.history) ? body.history : [];
+    }
+    
+    console.log('Parsed — userMessage:', userMessage, '| history length:', history.length);
+    
     if (!userMessage) {
-      return res.status(400).json({ error: 'Message required' });
+      console.log('Validation FAILED: no userMessage extracted');
+      return res.status(400).json({ error: 'Message required', debug: { bodyType: typeof req.body, keys: Object.keys(body) } });
     }
 
     // Handle STOP keyword (A2P compliance)
